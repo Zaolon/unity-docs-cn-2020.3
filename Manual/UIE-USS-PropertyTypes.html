@@ -1,0 +1,381 @@
+<!DOCTYPE html><html class="no-js" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5V25JL6');
+    </script><link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="USS 属性类型 - Unity 手册">
+<title>USS 属性类型 - Unity 手册</title>
+<meta name="description" content="使用 USS 时，可为内置的 VisualElement 属性或 UI 代码中的自定义属性指定值。">
+<meta property="og:description" content="使用 USS 时，可为内置的 VisualElement 属性或 UI 代码中的自定义属性指定值。">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFiles/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFiles/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFiles/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFiles/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFiles/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFiles/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFiles/images/favicons/tileicon-144x144.png">
+<script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-domain-script="6e91be4c-3145-4ea2-aa64-89d716064836"></script><script type="text/javascript">
+        function OptanonWrapper() { }
+    </script><script>
+      var docs_type = 'Manual';
+      var lang = 'cn';
+      var page = 'UIE-USS-PropertyTypes';
+      if(!page) page = 'index';
+      var version = '2020.3';
+      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+<link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
+<link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UIE-USS-PropertyTypes.html">
+<link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UIE-USS-PropertyTypes.html" hreflang="en">
+<link rel="alternate" href="https://docs.unity3d.com/cn/2020.3/Manual/UIE-USS-PropertyTypes.html" hreflang="zh">
+<link rel="alternate" href="https://docs.unity3d.com/ja/2020.3/Manual/UIE-USS-PropertyTypes.html" hreflang="ja">
+<link rel="alternate" href="https://docs.unity3d.com/es/2020.3/Manual/UIE-USS-PropertyTypes.html" hreflang="es">
+<link rel="alternate" href="https://docs.unity3d.com/kr/2020.3/Manual/UIE-USS-PropertyTypes.html" hreflang="ko">
+<link rel="alternate" href="https://docs.unity3d.com/ru/2020.3/Manual/UIE-USS-PropertyTypes.html" hreflang="ru">
+<link rel="alternate" href="https://docs.unity3d.com/2020.3/Documentation/Manual/UIE-USS-PropertyTypes.html" hreflang="x-default">
+</head>
+<body>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div id="nav-open" for="nav-input"><span></span></div>
+<div class="logo"><a href="./index.html"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="搜索手册..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul class="menu-items">
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity3d.com/">
+                unity3d.com
+              </a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="version-switcher">
+<div class="current toggle" data-target=".version-list"><div class="version-number">
+<div class="d-inline-block">
+          Version:
+          <b>2020.3</b>
+</div>
+<div class="d-inline-block arrow"></div>
+</div></div>
+<div class="version-list" style="display:none;">
+<ul class="versions">
+<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-USS-PropertyTypes.html">2021.2</a></li>
+<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-USS-PropertyTypes.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-USS-PropertyTypes.html">2020.3</a></li>
+<li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-USS-PropertyTypes.html">2020.2</a></li>
+<li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-USS-PropertyTypes.html">2020.1</a></li>
+<li class="supported"><a class="docs_version_url_2019.4" href="/cn/2019.4/Manual/UIE-USS-PropertyTypes.html">2019.4</a></li>
+<li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-USS-PropertyTypes.html">2019.3</a></li>
+<li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-USS-PropertyTypes.html">2019.2</a></li>
+<li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-USS-PropertyTypes.html">2019.1</a></li>
+<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-USS-PropertyTypes.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-USS-PropertyTypes.html">2018.3</a></li>
+<li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-USS-PropertyTypes.html">2018.2</a></li>
+<li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-USS-PropertyTypes.html">2018.1</a></li>
+<li class=""><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/UIE-USS-PropertyTypes.html">2017.4</a></li>
+<li class=""><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/UIE-USS-PropertyTypes.html">2017.3</a></li>
+<li class=""><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/UIE-USS-PropertyTypes.html">2017.2</a></li>
+<li class=""><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/UIE-USS-PropertyTypes.html">2017.1</a></li>
+<li class=""><a class="docs_version_url_560" href="/cn/560/Manual/UIE-USS-PropertyTypes.html">5.6</a></li>
+<div class="versionsWithThisPage" style="display:none;"><li><p>包含此页的版本：</p></li></div>
+<div class="versionsWithoutThisPage" style="display:none;"><li><p>不含此页的版本：</p></li></div>
+</ul>
+<ul class="description">
+<li>
+<div class="supported-box"></div>受支持</li>
+<li>
+<div class="legacy-box"></div>旧版</li>
+</ul>
+</div>
+</div>
+<ul class="nav-menu-items">
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
+</ul>
+<div class="lang-switcher">
+<div class="current toggle" data-target=".lang-list">
+<div class="lbl">语言:
+        <span class="b">中文</span>
+</div>
+<div class="arrow"></div>
+</div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a data-lang="en" href="/2020.3/Documentation/Manual/UIE-USS-PropertyTypes.html">English</a></li>
+<li><a data-lang="cn" href="/cn/2020.3/Manual/UIE-USS-PropertyTypes.html">中文</a></li>
+<li><a data-lang="ja" href="/ja/2020.3/Manual/UIE-USS-PropertyTypes.html">日本語</a></li>
+<li><a data-lang="es" href="/es/2020.3/Manual/UIE-USS-PropertyTypes.html">Español</a></li>
+<li><a data-lang="kr" href="/kr/2020.3/Manual/UIE-USS-PropertyTypes.html">한국어</a></li>
+<li><a data-lang="ru" href="/ru/2020.3/Manual/UIE-USS-PropertyTypes.html">Русский</a></li>
+</ul></div>
+</div>
+</div></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar hidden"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc">
+<h2>手册</h2>
+<div class="version-switcher">
+<div class="current toggle" data-target=".version-list"><div class="version-number">
+<div class="d-inline-block">
+          Version:
+          <b>2020.3</b>
+</div>
+<div class="d-inline-block arrow"></div>
+</div></div>
+<div class="version-list" style="display:none;">
+<ul class="versions">
+<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-USS-PropertyTypes.html">2021.2</a></li>
+<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-USS-PropertyTypes.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-USS-PropertyTypes.html">2020.3</a></li>
+<li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-USS-PropertyTypes.html">2020.2</a></li>
+<li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-USS-PropertyTypes.html">2020.1</a></li>
+<li class="supported"><a class="docs_version_url_2019.4" href="/cn/2019.4/Manual/UIE-USS-PropertyTypes.html">2019.4</a></li>
+<li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-USS-PropertyTypes.html">2019.3</a></li>
+<li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-USS-PropertyTypes.html">2019.2</a></li>
+<li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-USS-PropertyTypes.html">2019.1</a></li>
+<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-USS-PropertyTypes.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-USS-PropertyTypes.html">2018.3</a></li>
+<li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-USS-PropertyTypes.html">2018.2</a></li>
+<li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-USS-PropertyTypes.html">2018.1</a></li>
+<li class=""><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/UIE-USS-PropertyTypes.html">2017.4</a></li>
+<li class=""><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/UIE-USS-PropertyTypes.html">2017.3</a></li>
+<li class=""><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/UIE-USS-PropertyTypes.html">2017.2</a></li>
+<li class=""><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/UIE-USS-PropertyTypes.html">2017.1</a></li>
+<li class=""><a class="docs_version_url_560" href="/cn/560/Manual/UIE-USS-PropertyTypes.html">5.6</a></li>
+<div class="versionsWithThisPage" style="display:none;"><li><p>包含此页的版本：</p></li></div>
+<div class="versionsWithoutThisPage" style="display:none;"><li><p>不含此页的版本：</p></li></div>
+</ul>
+<ul class="description">
+<li>
+<div class="supported-box"></div>受支持</li>
+<li>
+<div class="legacy-box"></div>旧版</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div></div></div></div></div>
+<div id="content-wrap" class="content-wrap opened-sidebar"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul>
+<li><a href="UnityManual.html">Unity 用户手册 2020.3 (LTS)</a></li>
+<li><a href="UIToolkits.html">创建用户界面 (UI)</a></li>
+<li><a href="UIElements.html">UI 工具包</a></li>
+<li><a href="UIE-USS.html">Unity style sheets (USS)</a></li>
+<li>USS 属性类型</li>
+</ul></div>
+<div class="mb20"><div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIE-USS-Selectors-Pseudo-Classes.html"></a></span><div class="tip">伪类</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIE-USS-SupportedProperties.html"></a></span><div class="tip">USS 支持的属性</div>
+</div>
+</div></div>
+<h1>USS 属性类型</h1>
+<!--BeginSwitchLink--><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<h2>内置属性与自定义属性</h2>
+
+<p>使用 USS 时，可为内置的 <code>VisualElement</code> 属性或 UI 代码中的自定义属性指定值。</p>
+
+<p>In addition of reading their values from USS files, you can assign built-in property values in C#, using the C# properties of <code>VisualElement</code>. Values assigned in C# override values from a Unity style sheet (USS).</p>
+
+<p>可使用<a href="UIE-USS-CustomProperties.html">自定义属性</a> 来扩展 USS。自定义 USS 属性需要 <code>--</code> 前缀。</p>
+
+<h2>属性值</h2>
+
+<p>本节列出了支持的类型。</p>
+
+<h3>长度</h3>
+
+<p>UI 工具包支持像素 (<code>px</code>) 和百分比 (<code>%</code>) 作为长度的度量单位。像素值是绝对值，而百分比通常相对于元素父级。</p>
+
+<p>例如：</p>
+
+<ul>
+<li>
+<code>width:200px;</code> 表示宽度为 200 像素。</li>
+<li>
+<code>width:50%;</code> 表示宽度为父元素宽度的一半。</li>
+</ul>
+
+<p>It’s important to specify the unit of measurement. If you do not specify a unit of measurement, UI Toolkit assumes that the property value is expressed in pixels.</p>
+
+<p><strong>注意：</strong><code>0</code> 是一个不需要度量单位的特殊值。</p>
+
+<h3>数值</h3>
+
+<p>数值表示为浮点或整数字面值。例如：<code>flex:1.0</code>。</p>
+
+<h3>关键字</h3>
+
+<p>某些内置属性支持特定关键字。关键字提供描述性名称而不是数字。例如：<code>position:absolute</code>。所有属性都支持 <code>initial</code> 全局关键字，该关键字将属性重置为默认值。请参阅<a href="UIE-USS-SupportedProperties.html">支持的属性</a>以查看关键字的列表。</p>
+
+<h3>颜色</h3>
+
+<p>UI 工具包支持以下字面颜色值和函数：</p>
+
+<ul>
+<li>十六进制值：<code>#FFFF00</code>（rgba，每个通道一个字节）、<code>#0F0</code> (rgb)</li>
+<li>RGB 函数：<code>rgb(255, 255, 0)</code>
+</li>
+<li>RGBA 函数：<code>rgba(255, 255, 0, 1.0)</code>
+</li>
+<li>颜色关键字：<code>blue</code>、<code>transparent</code>
+</li>
+</ul>
+
+<h3>资源</h3>
+
+<p>You can reference project assets such as fonts and textures from your USS files. For example, you might reference a texture to use as the background image for an element.</p>
+
+<p>To reference an asset, you can use either the <code>url()</code> function or the <code>resource()</code> function. Referenced Assets are resolved when the style sheet is imported.</p>
+
+<p>For example, the style declaration below uses the <code>resource()</code> function to reference a texture asset named <code>img.png</code> in the <code>Images</code> directory, and specify it as the background image.</p>
+
+<pre><code class="css">`background-image: resource("Images/img.png");
+</code></pre>
+
+<p>Unity recommends using <code>url()</code> function in most cases. However, the <code>resource()</code> function supports automatically loading different versions of image assets for different screen densities.</p>
+
+<h3>Referencing assets with the url function</h3>
+
+<p>When you reference an asset with the <code>url()</code> function, the path you specify can be relative or absolute:</p>
+
+<ul>
+<li>Relative paths must be relative to the folder that contains the USS file that references the asset.</li>
+<li>Absolute paths are relative to the project.</li>
+</ul>
+
+<p>The path must include the file extension.</p>
+
+<p>For example, let’s say your project has a <code>USS</code> folder that contains all of your style sheets, and a Resources folder that contains all of your image assets.</p>
+
+<pre><code>Assets
+  └─ Editor
+      └─ Resources
+      └─ USS
+</code></pre>
+
+<p>To reference an image named <code>thumb.png</code>, you can use one of the following paths:</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;">
+<col style="text-align:left;">
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Relative path</th>
+	<th style="text-align:left;">Absolute path</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><code>url("../Resources/thumb.png")</code></td>
+	<td style="text-align:left;">
+<code>url("/Assets/Editor/Resources/thumb.png")</code><br><br> <code>url("project:/Assets/Editor/Resources/thumb.png")</code> <br><br> <code>url("project:///Assets/Editor/Resources/thumb.png")</code>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Referencing assets with the resource function</h3>
+
+<p>The <code>resource()</code> function can reference assets in Unity’s resource folders (<code>Resources</code> and <code>Editor Default Resources</code>). You reference an asset by name.</p>
+
+<ul>
+<li>If the file is in the <code>Editor Default Resources Resources</code> folder, you must include the file extension.</li>
+<li>If the file is in the <code>Resources</code> folder, you must not include the file extension.</li>
+</ul>
+
+<p>例如：</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;">
+<col style="text-align:left;">
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Path to file</th>
+	<th style="text-align:left;">Reference syntax</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><code>Assets/Resources/Images/my-image.png</code></td>
+	<td style="text-align:left;"><code>resource("Images/my-image")</code></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>Assets/Editor Default Resources/Images/my-image.png</code></td>
+	<td style="text-align:left;"><code>resource("Images/default-image.png")</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Referencing image assets for High DPI/Retina screens</h4>
+
+<p>If you need to support screens with different screen densities (DPI), the <code>resource()</code> function allows you to load the correct versions of texture assets automatically.</p>
+
+<p>You have to:</p>
+
+<ul>
+<li>Make sure that the high DPI versions of your textures have a <code>@2x</code> suffix in their file names. For example the high DPI version of <code>myimage.png</code> should be <code>myimage@2x.png</code>
+</li>
+<li>Place the regular and high DPI versions of the texture assets in the same project folder.</li>
+</ul>
+
+<p>When Unity loads the asset, it automatically chooses the correct version for the current screen DPI.</p>
+
+<p>For example, if you use <code>resource("myimage")</code> in USS, Unity loads either <code>Resources/myimage.png</code> or <code>Resources/myimage@2x.png</code>.</p>
+
+<h3>字符串</h3>
+
+<p>使用引号指定字符串值。例如：<code>--my-property: "foo"</code>。</p>
+<div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIE-USS-Selectors-Pseudo-Classes.html"></a></span><div class="tip">伪类</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIE-USS-SupportedProperties.html"></a></span><div class="tip">USS 支持的属性</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper">
+<div class="footer clear">
+<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="menu">
+<a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
+</div>
+</div>
+<div></div>
+</div>
+</div></div></div>
+</div>
+</body>
+</html>
