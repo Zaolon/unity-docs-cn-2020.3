@@ -14,8 +14,8 @@
 <meta property="og:title" content="重要的类 - 矢量 - Unity 手册">
 <title>重要的类 - 矢量 - Unity 手册</title>
 <meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/VectorAdd.png">
-<meta name="description" content="矢量是一个基本的数学概念，用于描述方向和大小。在游戏和应用程序中，矢量通常用于描述一些基本属性，例如角色的位置、物体移动的速度或两个对象之间的距离。">
-<meta property="og:description" content="矢量是一个基本的数学概念，用于描述方向和大小。在游戏和应用程序中，矢量通常用于描述一些基本属性，例如角色的位置、物体移动的速度或两个对象之间的距离。">
+<meta name="description" content="Vectors are a fundamental mathematical concept which allow you to describe a direction and magnitude. In games and apps, vectors are often used to describe some of the fundamental properties such as the position of a character, the speed something is moving, or the distance between two objects.">
+<meta property="og:description" content="Vectors are a fundamental mathematical concept which allow you to describe a direction and magnitude. In games and apps, vectors are often used to describe some of the fundamental properties such as the position of a character, the speed something is moving, or the distance between two objects.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -35,7 +35,7 @@
       var page = 'VectorCookbook';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/VectorCookbook.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/VectorCookbook.html" hreflang="en">
@@ -79,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/VectorCookbook.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/VectorCookbook.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/VectorCookbook.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/VectorCookbook.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/VectorCookbook.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/VectorCookbook.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/VectorCookbook.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/VectorCookbook.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/VectorCookbook.html">2020.1</a></li>
@@ -88,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/VectorCookbook.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/VectorCookbook.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/VectorCookbook.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/VectorCookbook.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/VectorCookbook.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/VectorCookbook.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/VectorCookbook.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/VectorCookbook.html">2018.1</a></li>
@@ -143,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/VectorCookbook.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/VectorCookbook.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/VectorCookbook.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/VectorCookbook.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/VectorCookbook.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/VectorCookbook.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/VectorCookbook.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/VectorCookbook.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/VectorCookbook.html">2020.1</a></li>
@@ -152,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/VectorCookbook.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/VectorCookbook.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/VectorCookbook.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/VectorCookbook.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/VectorCookbook.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/VectorCookbook.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/VectorCookbook.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/VectorCookbook.html">2018.1</a></li>
@@ -194,7 +198,7 @@
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>矢量是一个基本的数学概念，用于描述方向和大小。在游戏和应用程序中，矢量通常用于描述一些基本属性，例如角色的位置、物体移动的速度或两个对象之间的距离。</p>
+<p>Vectors are a fundamental mathematical concept which allow you to describe a direction and magnitude. In games and apps, vectors are often used to describe some of the fundamental properties such as the position of a character, the speed something is moving, or the distance between two objects.</p>
 
 <p>矢量算术是计算机编程很多方面（如图形、物理和动画）的基础，深入了解这一主题对于充分发挥 Unity 的功能很有帮助。</p>
 
@@ -319,11 +323,7 @@ heading.y = 0;  // 这是平行于地面的方向。
 
 <p>叉积仅对 3D 矢量有意义。它需要两个 3D 矢量作为输入，并返回另一个 3D 矢量作为结果。</p>
 
-<p>结果矢量垂直于两个输入矢量。可使用“左手规则”根据输入矢量的排序确定输出矢量的方向。如果第一个参数对应于手的拇指，而第二个参数对应于食指，则结果将指向中指的方向。如果参数的顺序颠倒，得到的矢量将指向完全相反的方向，但大小相同。</p>
-
-<figure>
-<img src="../uploads/Main/LeftHandRuleDiagram.png" alt="">
-</figure>
+<p>The result vector is perpendicular to the two input vectors. You can use the “right hand screw rule” to remember the direction of the output vector from the ordering of the input vectors. If you can curl your fingers in the order of the input vectors, your thumb points in the direction of the output vector. If the order of the parameters is reversed then the resulting vector will point in the exact opposite direction but will have the same magnitude.</p>
 
 <p>结果的大小等于输入矢量的大小相乘，然后该值再乘以二者之间角度的正弦。正弦函数的一些有用值如下所示：</p>
 
@@ -355,6 +355,10 @@ Vector3 side2 = c - a;
 Vector3 normal = Vector3.Cross(side1, side2);
 </code></pre>
 
+<figure>
+<img src="../uploads/Main/LeftHandRuleDiagram.png" alt="">
+</figure>
+
 <p>使用“左手规则”可确定将这两个矢量传递到叉积函数的顺序。在表面上方从上往下看（法线将指向外部）时，第一个矢量应顺时针扫过第二个矢量：</p>
 
 <p>如果输入矢量的顺序颠倒，结果将指向完全相反的方向。</p>
@@ -378,7 +382,7 @@ perp /= perpLength;
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

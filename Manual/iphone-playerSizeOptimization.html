@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="优化构建的 iOS 播放器的大小 - Unity 手册">
 <title>优化构建的 iOS 播放器的大小 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="减小播放器大小的两种主要方法是在 Xcode 中创建合理的 Release build 以及在 Unity 中更改 Stripping Level。">
 <meta property="og:description" content="减小播放器大小的两种主要方法是在 Xcode 中创建合理的 Release build 以及在 Unity 中更改 Stripping Level。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'iphone-playerSizeOptimization';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/iphone-playerSizeOptimization.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/iphone-playerSizeOptimization.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/iphone-playerSizeOptimization.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/iphone-playerSizeOptimization.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/iphone-playerSizeOptimization.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/iphone-playerSizeOptimization.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/iphone-playerSizeOptimization.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/iphone-playerSizeOptimization.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/iphone-playerSizeOptimization.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/iphone-playerSizeOptimization.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/iphone-playerSizeOptimization.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/iphone-playerSizeOptimization.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/iphone-playerSizeOptimization.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/iphone-playerSizeOptimization.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/iphone-playerSizeOptimization.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/iphone-playerSizeOptimization.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/iphone-playerSizeOptimization.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/iphone-playerSizeOptimization.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/iphone-playerSizeOptimization.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/iphone-playerSizeOptimization.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/iphone-playerSizeOptimization.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/iphone-playerSizeOptimization.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/iphone-playerSizeOptimization.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/iphone-playerSizeOptimization.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/iphone-playerSizeOptimization.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/iphone-playerSizeOptimization.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/iphone-playerSizeOptimization.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/iphone-playerSizeOptimization.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/iphone-playerSizeOptimization.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/iphone-playerSizeOptimization.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/iphone-playerSizeOptimization.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/iphone-playerSizeOptimization.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/iphone-playerSizeOptimization.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/iphone-playerSizeOptimization.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/iphone-playerSizeOptimization.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/iphone-playerSizeOptimization.html">2018.1</a></li>
@@ -220,7 +225,7 @@
 
 <h2>使用 IL2CPP 进行剥离</h2>
 
-<p>Refer to documentation on <a href="ManagedCodeStripping.html">managed bytecode stripping with IL2CPP</a> for more information</p>
+<p>请参阅有关<a href="ManagedCodeStripping.html">使用 IL2CPP 进行托管字节码剥离</a>的文档以了解更多信息</p>
 
 <p><strong>注意：</strong>有时候很难确定哪些类被错误剥离（虽然应用程序需要这些类）。通常，通过在模拟器上运行剥离后的应用程序并检查 Xcode 控制台是否有错误消息，可以获得有用的信息。</p>
 
@@ -260,7 +265,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

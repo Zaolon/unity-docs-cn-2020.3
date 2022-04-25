@@ -13,8 +13,9 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="在 Unity Cloud Build 中使用可寻址资源 - Unity 手册">
 <title>在 Unity Cloud Build 中使用可寻址资源 - Unity 手册</title>
-<meta name="description" content="可寻址资源是具有唯一地址并可以从任何位置调用的资源。">
-<meta property="og:description" content="可寻址资源是具有唯一地址并可以从任何位置调用的资源。">
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="description" content="Addressable Assets are assets that have a unique address which you can use to load them from local or remote AssetBundles.">
+<meta property="og:description" content="Addressable Assets are assets that have a unique address which you can use to load them from local or remote AssetBundles.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -34,7 +35,7 @@
       var page = 'UnityCloudBuildAddressables';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UnityCloudBuildAddressables.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UnityCloudBuildAddressables.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildAddressables.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildAddressables.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UnityCloudBuildAddressables.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UnityCloudBuildAddressables.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildAddressables.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildAddressables.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UnityCloudBuildAddressables.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UnityCloudBuildAddressables.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UnityCloudBuildAddressables.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UnityCloudBuildAddressables.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UnityCloudBuildAddressables.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UnityCloudBuildAddressables.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildAddressables.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildAddressables.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UnityCloudBuildAddressables.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UnityCloudBuildAddressables.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UnityCloudBuildAddressables.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildAddressables.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildAddressables.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UnityCloudBuildAddressables.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UnityCloudBuildAddressables.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildAddressables.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildAddressables.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UnityCloudBuildAddressables.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UnityCloudBuildAddressables.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UnityCloudBuildAddressables.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UnityCloudBuildAddressables.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UnityCloudBuildAddressables.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UnityCloudBuildAddressables.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildAddressables.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildAddressables.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UnityCloudBuildAddressables.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UnityCloudBuildAddressables.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UnityCloudBuildAddressables.html">2018.1</a></li>
@@ -193,7 +198,7 @@
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p><a href="#com.unity.addressables">可寻址资源</a>是具有唯一地址并可以从任何位置调用的资源。</p>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.addressables@latest">Addressable Assets</a> are assets that have a unique address which you can use to load them from local or remote AssetBundles.</p>
 
 <h2>先决条件</h2>
 
@@ -201,7 +206,7 @@
 
 <ul>
 <li>转换您的项目从而在本地使用可寻址资源，即：</li>
-<li>安装 <a href="https://docs.unity3d.com/Packages/com.unity.addressables@1.8/manual/AddressableAssetsGettingStarted.html">Addressables 包</a>
+<li>Install the <a href="https://docs.unity3d.com/Packages/com.unity.addressables@latest?subfolder=/manual/AddressableAssetsGettingStarted.html">Addressables package</a>
 </li>
 <li>将资源设置为可寻址</li>
 <li>将更新的项目提交到所选的版本控制系统 (VCS)</li>
@@ -234,7 +239,7 @@
 
 <h3>启用 Cloud Content Delivery 服务</h3>
 
-<p>如果要从 Cloud Build 将可寻址资源上传到 <a href="https://docs.unity3d.com/Manual/UnityCCD.html">Cloud Content Delivery</a> (CCD) 服务，请执行以下操作：</p>
+<p>If you want to upload Addressables to the <a href="UnityCCD.html">Cloud Content Delivery</a> (CCD) service from Cloud Build:</p>
 
 <p>1.单击 <strong>Edit Addressables Asset Options</strong>。
 2.启用 <strong>Content Delivery Upload</strong> 以将可寻址资源上传到 CCD。
@@ -244,7 +249,7 @@
 6.保存目标配置。
 7.构建目标。</p>
 
-<p>有关如何通过 CCD 使用可寻址资源的更多信息，请参阅 <a href="https://docs.unity3d.com/Packages/com.unity.addressables@1.16/manual/AddressablesCCD.html">Cloud Content Delivery 可寻址资源系统</a>。</p>
+<p>See <a href="https://docs.unity3d.com/Packages/com.unity.addressables@latest?subfolder=/manual/AddressablesCCD.html">Addressable Asset system with Cloud Content Delivery</a> for more information about using Addressables with CCD.</p>
 
 <h3>运行内容更新构建</h3>
 
@@ -291,14 +296,14 @@
 2.在您的构建目标上，选择 <strong>Edit Advanced Options</strong>。
 3.在 <strong>Post-Build Script Path</strong> 字段中，输入脚本的路径。</p>
 
-<p>在编写脚本时，以下提示可能很有用：
-* 构建的可寻址资源内容位于 <code>$WORKSPACE/.build/last/&amp;lt;BUILD_TARGET_ID&amp;gt;/extra_data/addrs/</code></p>
-
-<h2>* 可以在 Build Target <strong>Config</strong> 页面中，设置密钥的环境变量</h2>
+<p>在编写脚本时，以下提示可能很有用：</p>
 
 <ul>
-<li><span class="page-history">在 <a href="https://docs.unity3d.com/2018.3/Documentation/Manual/30_search.html?q=newin20183">2018.3</a> 中添加了 [FeatureName] <span class="search-words">NewIn20183</span></span></li>
+<li><p>构建的可寻址资源内容位于 <code>$WORKSPACE/.build/last/&amp;lt;BUILD_TARGET_ID&amp;gt;/extra_data/addrs/</code></p></li>
+<li><p>可以在 Build Target <strong>Config</strong> 页面中，设置密钥的环境变量</p></li>
 </ul>
+
+<hr>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="UnityCloudBuildIncludingSpecificScenes.html"></a></span><div class="tip">包含特定场景</div>
@@ -310,7 +315,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="焦点事件 - Unity 手册">
 <title>焦点事件 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="当元素获得或失去焦点时将发生焦点事件。">
 <meta property="og:description" content="当元素获得或失去焦点时将发生焦点事件。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'UIE-Focus-Events';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UIE-Focus-Events.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UIE-Focus-Events.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Focus-Events.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Focus-Events.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-Focus-Events.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-Focus-Events.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Focus-Events.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Focus-Events.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-Focus-Events.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-Focus-Events.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-Focus-Events.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-Focus-Events.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-Focus-Events.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-Focus-Events.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Focus-Events.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Focus-Events.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-Focus-Events.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-Focus-Events.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-Focus-Events.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Focus-Events.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Focus-Events.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-Focus-Events.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-Focus-Events.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Focus-Events.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Focus-Events.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-Focus-Events.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-Focus-Events.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-Focus-Events.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-Focus-Events.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-Focus-Events.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-Focus-Events.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Focus-Events.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Focus-Events.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-Focus-Events.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-Focus-Events.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-Focus-Events.html">2018.1</a></li>
@@ -208,7 +213,7 @@
 <li>在焦点变化后立即发送到事件目标的 <code>FocusEvent</code> 和 <code>BlurEvent</code> 事件。</li>
 </ul>
 
-<p>The base class for all focus events is <a href="../ScriptReference/UIElements.FocusEventBase_1.html">FocusEventBase</a>.</p>
+<p>所有焦点事件的基类是 <a href="../ScriptReference/UIElements.FocusEventBase_1.html">FocusEventBase</a>。</p>
 
 <table>
 <colgroup>
@@ -263,7 +268,7 @@
 
 <h2>独特的属性</h2>
 
-<p>The following section explains relevant properties unique to focus events. This isn’t a complete list of all properties within the focus event family. For a full list, see the <a href="../ScriptReference/UIElements.FocusEventBase_1..html">FocusEventBase</a> in the API documentation.</p>
+<p>以下部分解释了焦点事件独有的相关属性。这并非焦点事件系列中所有属性的完整列表。有关完整列表，请参阅 API 文档中的 <a href="../ScriptReference/UIElements.FocusEventBase_1..html">FocusEventBase</a>。</p>
 
 <p><strong><code>relatedTarget</code></strong>：包含作为事件次要目标的视觉元素。对于 <code>FocusOut</code> 和 <code>Blur</code> 事件，包含获取焦点的元素。对于 <code>FocusIn</code> 和 <code>Focus</code> 事件，包含失去焦点的元素。</p>
 
@@ -326,7 +331,7 @@
 
 <h3>BlurEvent</h3>
 
-<p>The event sent after an element loses focus.</p>
+<p>当元素失去焦点后发送的事件。</p>
 
 <p><strong><code>target</code></strong>：失去焦点的元素。</p>
 
@@ -334,7 +339,7 @@
 
 <h3>FocusEvent</h3>
 
-<p>The event sent after an element gained focus.</p>
+<p>当元素获得焦点后发送的事件。</p>
 
 <p><strong><code>target</code></strong>：获得焦点的元素。</p>
 
@@ -411,7 +416,7 @@ public class PlaceHolderExample : EditorWindow
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

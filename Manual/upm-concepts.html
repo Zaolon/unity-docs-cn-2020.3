@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="概念 - Unity 手册">
 <title>概念 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="本节介绍有关 Unity Package Manager 功能的许多概念：">
 <meta property="og:description" content="本节介绍有关 Unity Package Manager 功能的许多概念：">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'upm-concepts';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/upm-concepts.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/upm-concepts.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/upm-concepts.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/upm-concepts.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/upm-concepts.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/upm-concepts.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/upm-concepts.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/upm-concepts.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/upm-concepts.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/upm-concepts.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/upm-concepts.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/upm-concepts.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/upm-concepts.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/upm-concepts.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/upm-concepts.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/upm-concepts.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/upm-concepts.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/upm-concepts.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/upm-concepts.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/upm-concepts.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/upm-concepts.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/upm-concepts.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/upm-concepts.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/upm-concepts.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/upm-concepts.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/upm-concepts.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/upm-concepts.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/upm-concepts.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/upm-concepts.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/upm-concepts.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/upm-concepts.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/upm-concepts.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/upm-concepts.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/upm-concepts.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/upm-concepts.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/upm-concepts.html">2018.1</a></li>
@@ -256,7 +261,7 @@
 <li>当项目及其中的包需要多个包版本时<a href="upm-conflicts.html">解决冲突</a>。</li>
 </ul>
 
-<p>Unity Package Manager 针对每个项目安装示例、工具和资源，而不是针对特定机器或设备的所有项目中安装它们。此工具使用<a href="upm-cache.html">全局缓存</a>来存储下载的包元数据和内容。安装在项目中后，Unity 会像处理项目中的任何其他资源一样对待<a href="upm-assets.html">包资源</a>，只不过包资源存储在<a href="upm-assets.html">包文件夹中</a>并且__不可变__。只能永久性地更改来自<a href="#Local">本地</a>和<a href="#Embedded">嵌入式</a>包来源的内容。</p>
+<p>The Unity Package Manager installs samples, tools, and assets on a per-project basis, rather than installing them across all projects for a specific machine or device. It uses a <a href="upm-cache.html">global cache</a> to store downloaded package metadata and contents. Once installed in a project, Unity treats <a href="upm-assets.html">package assets</a> just like any other asset in the project, except that these assets are stored <a href="upm-assets.html">inside the package folder</a> and are <strong>immutable</strong>. You can permanently change content only from <a href="#Local">Local</a> and <a href="#Embedded">Embedded</a> package sources.</p>
 
 <p><a name="Sources"></a></p>
 
@@ -318,6 +323,8 @@
 <p>要编辑包的包清单，请参阅<a href="upm-inspect.html">检查包</a>。</p>
 
 <p>Package Manager 窗口会显示与上述某些来源对应的标签。有关更多信息，请参阅<a href="upm-ui-details.html#Tags">标签</a>。</p>
+
+<p><strong>Note</strong>: The Package Manager stores packages that you download from the Asset Store in a cache which is separate from the global cache. See <a href="AssetStorePackages.html">Asset Store packages</a> for more information.</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="Packages.html"></a></span><div class="tip">Unity 的 Package Manager</div>
@@ -329,7 +336,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

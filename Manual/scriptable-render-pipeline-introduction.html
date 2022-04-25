@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="可编程渲染管线简介 - Unity 手册">
 <title>可编程渲染管线简介 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="本页说明 Unity 的可编程渲染管线 (SRP) 的工作原理，并介绍一些关键概念和术语。本页面上的信息适用于通用渲染管线 (URP)、高清渲染管线 (HDRP) 和基于 SRP 的自定义渲染管线。">
 <meta property="og:description" content="本页说明 Unity 的可编程渲染管线 (SRP) 的工作原理，并介绍一些关键概念和术语。本页面上的信息适用于通用渲染管线 (URP)、高清渲染管线 (HDRP) 和基于 SRP 的自定义渲染管线。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'scriptable-render-pipeline-introduction';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/scriptable-render-pipeline-introduction.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/scriptable-render-pipeline-introduction.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/scriptable-render-pipeline-introduction.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/scriptable-render-pipeline-introduction.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/scriptable-render-pipeline-introduction.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/scriptable-render-pipeline-introduction.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/scriptable-render-pipeline-introduction.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/scriptable-render-pipeline-introduction.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/scriptable-render-pipeline-introduction.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/scriptable-render-pipeline-introduction.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/scriptable-render-pipeline-introduction.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/scriptable-render-pipeline-introduction.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/scriptable-render-pipeline-introduction.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/scriptable-render-pipeline-introduction.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/scriptable-render-pipeline-introduction.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/scriptable-render-pipeline-introduction.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/scriptable-render-pipeline-introduction.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/scriptable-render-pipeline-introduction.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/scriptable-render-pipeline-introduction.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/scriptable-render-pipeline-introduction.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/scriptable-render-pipeline-introduction.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/scriptable-render-pipeline-introduction.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/scriptable-render-pipeline-introduction.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/scriptable-render-pipeline-introduction.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/scriptable-render-pipeline-introduction.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/scriptable-render-pipeline-introduction.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/scriptable-render-pipeline-introduction.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/scriptable-render-pipeline-introduction.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/scriptable-render-pipeline-introduction.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/scriptable-render-pipeline-introduction.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/scriptable-render-pipeline-introduction.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/scriptable-render-pipeline-introduction.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/scriptable-render-pipeline-introduction.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/scriptable-render-pipeline-introduction.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/scriptable-render-pipeline-introduction.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/scriptable-render-pipeline-introduction.html">2018.1</a></li>
@@ -200,16 +205,18 @@
 
 <p>URP 和 HDRP 建立在 SRP 之上。您还可以在 SRP 之上创建自己的自定义渲染管线。</p>
 
-<h2>Render Pipeline Instance and Render Pipeline Asset</h2>
+<h2>渲染管线实例和渲染管线资源</h2>
 
 <p>每个基于 SRP 的渲染管线都有两个关键的自定义元素：</p>
 
 <ul>
-<li>A <strong>Render Pipeline Instance</strong>. This is an instance of a class defines the functionality of your render pipeline. Its script inherits from <a href="../ScriptReference/Rendering.RenderPipeline.html">RenderPipeline</a>, and overrides its <code>Render()</code> method.</li>
-<li>A <strong>Render Pipeline Asset</strong>. This is an asset in your Unity Project that stores data about which Render Pipeline Instance to use, and how to configure it. Its script inherits from <a href="../ScriptReference/Rendering.RenderPipelineAsset.html">RenderPipelineAsset</a> and overrides its <code>CreatePipeline()</code> method.</li>
+<li>
+<strong>渲染管线实例</strong>。这是定义渲染管线功能的类的实例。它的脚本继承自 <a href="../ScriptReference/Rendering.RenderPipeline.html">RenderPipeline</a> 并覆盖其 <code>Render()</code> 方法。</li>
+<li>
+<strong>渲染管线资源</strong>。这是 Unity 项目中的一项资源，用于存储有关所使用的渲染管线实例以及如何对其进行配置的数据。它的脚本继承自 <a href="../ScriptReference/Rendering.RenderPipelineAsset.html">RenderPipelineAsset</a> 并覆盖其 <code>CreatePipeline()</code> 方法。</li>
 </ul>
 
-<p>For more information on these elements, and instructions on how to create them in a custom render pipeline, see <a href="srp-creating-render-pipeline-asset-and-render-pipeline-instance.html">Creating a Render Pipeline Asset and a Render Pipeline Instance</a>.</p>
+<p>有关这些元素的更多信息，以及如何在自定义渲染管线中进行创建的说明，请参阅<a href="srp-creating-render-pipeline-asset-and-render-pipeline-instance.html">创建渲染管线资源和渲染管线实例</a>。</p>
 
 <h2>ScriptableRenderContext</h2>
 
@@ -246,7 +253,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

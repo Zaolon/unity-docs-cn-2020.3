@@ -13,9 +13,9 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="生成光照贴图 UV - Unity 手册">
 <title>生成光照贴图 UV - Unity 手册</title>
-<meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-0.jpg">
-<meta name="description" content="您可以自行为网格生成光照贴图 UV，或者 Unity 可以自动生成它们。">
-<meta property="og:description" content="您可以自行为网格生成光照贴图 UV，或者 Unity 可以自动生成它们。">
+<meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-0.png">
+<meta name="description" content="Unity can calculate the UVs for baked lightmaps when you import a model, or you can provide your own data.">
+<meta property="og:description" content="Unity can calculate the UVs for baked lightmaps when you import a model, or you can provide your own data.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -35,7 +35,7 @@
       var page = 'LightingGiUvs-GeneratingLightmappingUVs';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html" hreflang="en">
@@ -79,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2020.1</a></li>
@@ -88,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.1</a></li>
@@ -143,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2020.1</a></li>
@@ -152,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/LightingGiUvs-GeneratingLightmappingUVs.html">2018.1</a></li>
@@ -181,26 +185,56 @@
 <li><a href="Graphics.html">图形</a></li>
 <li><a href="LightingOverview.html">光照</a></li>
 <li><a href="Lightmappers.html">光照贴图</a></li>
-<li><a href="LightingGiUvs.html">光照贴图 UV</a></li>
+<li><a href="lightmap-uvs.html">光照贴图 UV</a></li>
 <li>生成光照贴图 UV</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="LightingGiUvs-ImportingFromMaya.html"></a></span><div class="tip">将 UV 从 Autodesk® Maya® 导入到 Unity</div>
+<span class="prev"><a href="LightingGiUvs.html"></a></span><div class="tip">Lightmap UVs introduction</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="ProgressiveLightmapper-UVOverlap.html"></a></span><div class="tip">UV 重叠</div>
+<span class="next"><a href="LightingGiUvs-visualizing.html"></a></span><div class="tip">Visualizing lightmap UVs</div>
 </div>
 </div></div>
 <h1>生成光照贴图 UV</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>您可以自行为网格生成<a href="LightingGiUvs.html">光照贴图 UV</a>，或者 Unity 可以自动生成它们。</p>
+<p>Unity can calculate the UVs for baked lightmaps when you import a model, or you can provide your own data.</p>
 
-<h2>生成您自己的光照贴图 UV</h2>
+<p>本页包含以下信息：</p>
 
-<p>您可以在所选的内容创作软件中编写自己的光照贴图 UV。必须将光照贴图 UV 放置在网格的第二个 UV 通道中。</p>
+<ul>
+<li><a href="#providing-own-uvs">How to provide your own lightmap UVs</a></li>
+<li>
+<a href="#automatically-generate-uvs">How to automatically generate lightmap UVs</a>
+
+<ul>
+<li><a href="#Settings">Automatic lightmap UV generation settings</a></li>
+<li><a href="#troubleshooting">Troubleshooting automatically generated lightmap UVs</a></li>
+</ul>
+</li>
+</ul>
+
+<p><a name="providing-own-uvs"></a></p>
+
+<h2>How to provide your own lightmap UVs</h2>
+
+<p>You can author your own lightmap UVs in the content creation software of your choice. Unity uses these UVs as input for its calculations.</p>
+
+<p>Where you put this data depends on whether you are providing UVs for baked lightmaps, real-time lightmaps, or both:</p>
+
+<ul>
+<li>For baked lightmaps, you must place lightmap UVs in the <a href="../ScriptReference/Mesh-uv2.html">Mesh.uv2</a>. This channel is also called “UV1”.</li>
+<li>For real-time lightmaps:
+
+<ul>
+<li>If you already have baked lightmap UVs in the <code>Mesh.uv2</code> of your mesh, and you want to use the same UVs as input for the real-time lightmaps, you do not need to do anything. Unity falls back to sharing the baked lightmap UVs.</li>
+<li>If you already have baked lightmap UVs in <code>Mesh.uv2</code>, and you want to provide different UVs as input for your real-time lightmaps, place the real-time lightmap UVs in <a href="../ScriptReference/Mesh-uv3.html">Mesh.uv3</a>, also called “UV2”.</li>
+<li>If you do not already have baked lightmap UVs in the second channel of your mesh, it’s your choice whether you use <code>Mesh.uv2</code> or <code>Mesh.uv3</code> for real-time lightmap UVs.</li>
+</ul>
+</li>
+</ul>
 
 <p>光照贴图的合理 UV 集应遵循以下规则：</p>
 
@@ -212,7 +246,9 @@
 <li>除非您希望某些区域具有更高的光照贴图分辨率，否则 UV 中三角形的相对比例与原始几何体中三角形的相对比例之间应该存在较小差异。</li>
 </ul>
 
-<h2>自动为模型生成光照贴图 UV</h2>
+<p><a name="automatically-generate-uvs"></a></p>
+
+<h2>How to automatically generate lightmap UVs</h2>
 
 <p>可以使用 <a href="class-FBXImporter.html">Model Import Settings</a> 告诉 Unity 为模型自动生成光照贴图 UV。</p>
 
@@ -224,12 +260,12 @@
 
 <p><a name="Settings"></a></p>
 
-<h2>Lightmap UVs settings</h2>
+<h3>Automatic lightmap UV generation settings</h3>
 
 <p>启用 <strong>Generate Lightmap UVs</strong> 后，这些设置会显示在 <a href="class-FBXImporter.html">Model Import Settings</a> 的 <strong>Model</strong> 选项卡中。</p>
 
 <figure>
-<img src="../uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-0.jpg" alt="">
+<img src="../uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-0.png" alt="">
 </figure>
 
 <table>
@@ -288,9 +324,13 @@
 </tbody>
 </table>
 
-<p><a name="PackMargin"> </a> </p>
+<p><a name="troubleshooting"></a></p>
 
-<h2>Pack Margin</h2>
+<h3>Troubleshooting automatically generated lightmap UVs</h3>
+
+<p><a name="PackMargin"></a></p>
+
+<h4>Pack Margin</h4>
 
 <p>为允许过滤，光照贴图包含图表边缘附近的纹理像素中的光照信息，因此应在图表之间始终包含一定的边距，以免在应用光照贴图时出现光渗。</p>
 
@@ -304,7 +344,7 @@
 
 <p><a name="MinResolutionAndScale"></a></p>
 
-<h2>最小光照贴图分辨率和最小对象比例</h2>
+<h4>Min Lightmap Resolution and Min Object Scale</h4>
 
 <p>将 UV 图表放置得太近可能会导致在最终的光照贴图中出现<a href="ProgressiveLightmapper-UVOverlap.html">图表纹素交叉渗漏</a>。将图表放置得太远会浪费内存。对象的理想打包间距取决于分配给它的光照贴图纹素的数量。</p>
 
@@ -318,36 +358,29 @@
 2.在 Inspector 中，导航到 MeshRenderer 组件的 <strong>Lightmapping</strong> 部分。
 3.打开 <strong>Baked Lightmap</strong> 折叠菜单。Unity 在带有 <strong>Lightmap Resolution</strong> 标签的烘焙光照贴图中显示 MeshRenderer 的光照贴图分辨率，并在带有 <strong>Lightmap Object Scale</strong> 标签的烘焙光照贴图中显示其变换比例。</p>
 
-<h2>角度失真</h2>
+<h4>Angle distortion</h4>
 
 <p>以下截屏显示了相同的分辨率，但具有不同的 UV。第一张图的 <strong>Angle Error</strong> 较高，结果中包含意料之外的失真。第二张图使用 <strong>Angle Error</strong> 默认值 (8%)。在具有较多三角形的网格中，角度失真会让形状显著失真。</p>
 
 <p><img src="../uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-2.png" alt=""><img src="../uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-3.jpg" alt=""> </p>
 
-<h2>区域失真</h2>
+<h4>Area distortion</h4>
 
 <p>在下图中，两个具有相同参数的聚光灯照亮圆柱体的两侧。圆柱体右侧的 <strong>Area Error</strong> 值较高，导致三角形失真并且分辨率降低，从而在光照中产生瑕疵。</p>
 
 <p><img src="../uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-4.png" alt=""><img src="../uploads/Main/LightingGiUvs-GeneratingLightmappingUVs-5.jpg" alt=""> </p>
-
-<hr>
-
-<p><span class="page-history">在 <a href="https://docs.unity3d.com/2018.1/Documentation/Manual/30_search.html?q=newin20181">2018.1</a> 版中添加了渐进光照贴图 <span class="search-words">NewIn20181</span></span></p>
-
-<p><span class="page-history">计算 Pack Margin 添加于 <a href="https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201">2020.1</a><span class="search-words"> NewIn20201</span></span></p>
-<!-- area:graphics -->
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="LightingGiUvs-ImportingFromMaya.html"></a></span><div class="tip">将 UV 从 Autodesk® Maya® 导入到 Unity</div>
+<span class="prev"><a href="LightingGiUvs.html"></a></span><div class="tip">Lightmap UVs introduction</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="ProgressiveLightmapper-UVOverlap.html"></a></span><div class="tip">UV 重叠</div>
+<span class="next"><a href="LightingGiUvs-visualizing.html"></a></span><div class="tip">Visualizing lightmap UVs</div>
 </div>
 </div>
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

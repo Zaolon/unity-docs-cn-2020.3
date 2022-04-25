@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="旧版延迟渲染路径 - Unity 手册">
 <title>旧版延迟渲染路径 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="本页面将详细介绍 Unity 内置渲染管线中的旧版延迟（光照预通道）渲染路径。有关延迟光照的技术概述，请参阅此文章。">
 <meta property="og:description" content="本页面将详细介绍 Unity 内置渲染管线中的旧版延迟（光照预通道）渲染路径。有关延迟光照的技术概述，请参阅此文章。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'RenderTech-DeferredLighting';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/RenderTech-DeferredLighting.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/RenderTech-DeferredLighting.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/RenderTech-DeferredLighting.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/RenderTech-DeferredLighting.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/RenderTech-DeferredLighting.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/RenderTech-DeferredLighting.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/RenderTech-DeferredLighting.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/RenderTech-DeferredLighting.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/RenderTech-DeferredLighting.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/RenderTech-DeferredLighting.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/RenderTech-DeferredLighting.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/RenderTech-DeferredLighting.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/RenderTech-DeferredLighting.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/RenderTech-DeferredLighting.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/RenderTech-DeferredLighting.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/RenderTech-DeferredLighting.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/RenderTech-DeferredLighting.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/RenderTech-DeferredLighting.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/RenderTech-DeferredLighting.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/RenderTech-DeferredLighting.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/RenderTech-DeferredLighting.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/RenderTech-DeferredLighting.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/RenderTech-DeferredLighting.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/RenderTech-DeferredLighting.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/RenderTech-DeferredLighting.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/RenderTech-DeferredLighting.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/RenderTech-DeferredLighting.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/RenderTech-DeferredLighting.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/RenderTech-DeferredLighting.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/RenderTech-DeferredLighting.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/RenderTech-DeferredLighting.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/RenderTech-DeferredLighting.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/RenderTech-DeferredLighting.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/RenderTech-DeferredLighting.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/RenderTech-DeferredLighting.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/RenderTech-DeferredLighting.html">2018.1</a></li>
@@ -218,7 +223,7 @@ Intel 965/GMA X3100 及更高版本。在移动端，所有支持 OpenGL ES 3.0 
 
 <h2>性能注意事项</h2>
 
-<p>延迟光照中的实时光源的渲染开销与接受光照的像素数成比例，并_不_依赖于场景复杂度。所以小型点光源或聚光灯的渲染成本非常低，如果它们被场景对象完全或部分遮挡，那么成本甚至更低。</p>
+<p>The rendering overhead of realtime lights in deferred lighting is proportional to the number of pixels illuminated by the light and is <em>not</em> dependent on scene complexity. So small Point Lights or Spot Lights are very cheap to render and if they are fully or partially occluded by scene objects then they are even cheaper.</p>
 
 <p>当然，有阴影的光源比没有阴影的光源的成本高得多。在延迟光照中，对于每个阴影投射光源，仍然需要将投射阴影的对象渲染一次或多次。此外，应用阴影的光照着色器的渲染开销高于禁用阴影时的渲染开销。</p>
 
@@ -242,7 +247,7 @@ Intel 965/GMA X3100 及更高版本。在移动端，所有支持 OpenGL ES 3.0 
 
 <p>光照通道根据深度、法线和镜面反射能力来计算光照。光照是在屏幕空间内计算的，因此处理所需的时间与场景复杂性无关。光照缓冲区是单个 ARGB32 渲染纹理，其中在 RGB 通道中包含漫射光照，而在 A 通道中包含单色镜面光照。光照值采用对数编码，因此提供的动态范围高于 ARGB32 纹理通常可能提供的范围。如果摄像机启用了 HDR 渲染，则光照缓冲区为 ARGBHalf 格式，并且不执行对数编码。</p>
 
-<p>不与摄像机近平面相交的点光源和聚光灯将渲染为 3D 形状（的正面），并会启用对场景的深度测试。与近平面相交的光源也用 3D 形状进行渲染，但作为背面并进行反向深度测试。因此，部分或完全遮挡的光源的渲染成本很低。如果光源同时与摄像机的远平面和近平面相交，则不能使用上述优化，而光源会被绘制为紧密四边形并且不进行深度测试。</p>
+<p>Point Lights and Spot Lights that do not cross the camera’s near plane are rendered as (front faces of) 3D shapes, with the depth test against the scene enabled. Lights crossing the near plane are also rendered using 3D shapes, but as back faces with inverted depth test instead. This makes partially or fully occluded lights very cheap to render. If a light intersects both far and near camera planes at the same time, the above optimizations cannot be used, and the light is drawn as a tight quad with no depth testing.</p>
 
 <p>以上说明不适用于方向光；方向光总是渲染为全屏四边形。</p>
 
@@ -265,7 +270,7 @@ Intel 965/GMA X3100 及更高版本。在移动端，所有支持 OpenGL ES 3.0 
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

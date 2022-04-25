@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Lighting Mode：Shadowmask - Unity 手册">
 <title>Lighting Mode：Shadowmask - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="本页介绍在场景使用的 Lighting Settings Asset 的 Lighting Mode 属性设置为 Shadowmask 时，该场景中所有混合光源的行为。">
 <meta property="og:description" content="本页介绍在场景使用的 Lighting Settings Asset 的 Lighting Mode 属性设置为 Shadowmask 时，该场景中所有混合光源的行为。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'LightMode-Mixed-Shadowmask';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/LightMode-Mixed-Shadowmask.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/LightMode-Mixed-Shadowmask.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightMode-Mixed-Shadowmask.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightMode-Mixed-Shadowmask.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/LightMode-Mixed-Shadowmask.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/LightMode-Mixed-Shadowmask.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightMode-Mixed-Shadowmask.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightMode-Mixed-Shadowmask.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/LightMode-Mixed-Shadowmask.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/LightMode-Mixed-Shadowmask.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/LightMode-Mixed-Shadowmask.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/LightMode-Mixed-Shadowmask.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/LightMode-Mixed-Shadowmask.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/LightMode-Mixed-Shadowmask.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightMode-Mixed-Shadowmask.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightMode-Mixed-Shadowmask.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/LightMode-Mixed-Shadowmask.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/LightMode-Mixed-Shadowmask.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/LightMode-Mixed-Shadowmask.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightMode-Mixed-Shadowmask.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightMode-Mixed-Shadowmask.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/LightMode-Mixed-Shadowmask.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/LightMode-Mixed-Shadowmask.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/LightMode-Mixed-Shadowmask.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/LightMode-Mixed-Shadowmask.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/LightMode-Mixed-Shadowmask.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/LightMode-Mixed-Shadowmask.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/LightMode-Mixed-Shadowmask.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/LightMode-Mixed-Shadowmask.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/LightMode-Mixed-Shadowmask.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/LightMode-Mixed-Shadowmask.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightMode-Mixed-Shadowmask.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/LightMode-Mixed-Shadowmask.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/LightMode-Mixed-Shadowmask.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/LightMode-Mixed-Shadowmask.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/LightMode-Mixed-Shadowmask.html">2018.1</a></li>
@@ -197,7 +202,7 @@
 
 <p>本页介绍在场景使用的 <a href="class-LightingSettings.html">Lighting Settings Asset</a> 的 <a href="lighting-mode.html">Lighting Mode</a> 属性设置为 <strong>Shadowmask</strong> 时，该场景中所有<a href="LightMode-Mixed.html">混合光源</a>的行为。</p>
 
-<p>类似于 <a href="LightMode-BakedIndirect">Baked Indirect 光照模式</a>，Shadowmask 光照模式将实时直接光照与烘焙间接光照结合在一起。但是，Shadowmask 光照模式与 Baked Indirect 光照模式的不同之处在于渲染阴影的方式。Shadowmask 光照模式允许 Unity 在运行时结合烘焙阴影和实时阴影，并允许渲染远处的阴影。实现这一点的方法是使用称为“阴影遮罩”的附加光照贴图纹理并将附加信息存储在<a href="LightProbes.html">光照探针</a>中。</p>
+<p>Similar to <a href="LightMode-Baked.html">Baked Indirect Lighting Mode</a>, Shadowmask Lighting Mode combines real-time direct lighting with baked indirect lighting. However, Shadowmask Lighting Mode differs from Baked Indirect Lighting Mode in the way that it renders shadows. Shadowmask Lighting Mode allows Unity to combine baked and real-time shadows at runtime, and to render shadows in the far distance. It does this by using an additional lightmap Texture known as a shadow mask, and by storing additional information in <a href="LightProbes.html">Light Probes</a>.</p>
 
 <p>Shadowmask 光照模式在所有光照模式中提供最高保真度的阴影，但需要的性能成本和内存要求也是最高的。此模式适用于在高端或中档硬件上渲染远处游戏对象可见时的真实场景，例如空旷的空间世界。</p>
 
@@ -311,7 +316,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

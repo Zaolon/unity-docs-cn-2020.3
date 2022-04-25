@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="扩展 UnityPlayerActivity Java 代码 - Unity 手册">
 <title>扩展 UnityPlayerActivity Java 代码 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="本页面包含以下部分：">
 <meta property="og:description" content="本页面包含以下部分：">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'AndroidUnityPlayerActivity';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/AndroidUnityPlayerActivity.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/AndroidUnityPlayerActivity.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/AndroidUnityPlayerActivity.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/AndroidUnityPlayerActivity.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/AndroidUnityPlayerActivity.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/AndroidUnityPlayerActivity.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/AndroidUnityPlayerActivity.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/AndroidUnityPlayerActivity.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/AndroidUnityPlayerActivity.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/AndroidUnityPlayerActivity.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/AndroidUnityPlayerActivity.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/AndroidUnityPlayerActivity.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/AndroidUnityPlayerActivity.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/AndroidUnityPlayerActivity.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/AndroidUnityPlayerActivity.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/AndroidUnityPlayerActivity.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/AndroidUnityPlayerActivity.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/AndroidUnityPlayerActivity.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/AndroidUnityPlayerActivity.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/AndroidUnityPlayerActivity.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/AndroidUnityPlayerActivity.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/AndroidUnityPlayerActivity.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/AndroidUnityPlayerActivity.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/AndroidUnityPlayerActivity.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/AndroidUnityPlayerActivity.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/AndroidUnityPlayerActivity.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/AndroidUnityPlayerActivity.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/AndroidUnityPlayerActivity.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/AndroidUnityPlayerActivity.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/AndroidUnityPlayerActivity.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/AndroidUnityPlayerActivity.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/AndroidUnityPlayerActivity.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/AndroidUnityPlayerActivity.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/AndroidUnityPlayerActivity.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/AndroidUnityPlayerActivity.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/AndroidUnityPlayerActivity.html">2018.1</a></li>
@@ -206,7 +211,7 @@
 
 <h2>扩展 UnityPlayerActivity 文件</h2>
 
-<p>When you develop a Unity Android application, you can use plug-ins to extend the standard <code>UnityPlayerActivity</code> class (the primary Java class for the Unity Player on Android, similar to <code>AppController.mm</code> on Unity iOS). An application can override all basic interactions between the Android OS and the Unity Android application.</p>
+<p>在开发 Unity Android 应用程序时，可使用插件来扩展标准的 <code>UnityPlayerActivity</code> 类（这是 Android 上的 Unity Player 的主 Java 类，类似于 Unity iOS 上的 <code>AppController.mm</code>）。应用程序可以覆盖 Android 操作系统和 Unity Android 应用程序之间的所有基本交互。</p>
 
 <p>要覆盖默认活动，请执行以下操作：</p>
 
@@ -215,44 +220,37 @@
 <li>修改 <a href="android-manifest.html">Android 清单</a>以将新 <code>Activity</code> 作为应用程序的入口点。</li>
 </ul>
 
-<p>The easiest way to achieve this is to export your project from Unity, then make the necessary modifications to the <code>UnityPlayerActivity</code> class in Android Studio. Or, you can create a new class, extend it, modify <code>AndroidManifest.xml</code> in the unityLibrary project, and then replace <code>UnityPlayerActivity</code> with your class.</p>
+<p>为实现此目的，最简单的方法是从 Unity 导出项目，然后在 Android Studio 中对 <code>UnityPlayerActivity</code> 类进行必要的修改。或者，您可以创建一个新类，对其进行扩展，修改 unityLibrary 项目中的 <code>AndroidManifest.xml</code>，然后将 <code>UnityPlayerActivity</code> 替换为您的类。</p>
 
-<p>To create a plug-in with your new Activity and add it to your Project, you must perform the following steps:
-1. Extend the UnityPlayerActivity file. This is best done in Android Studio after exporting project from Unity. There are several options:
-* The .java or .kt file containing your activity class can put put into Unity project
-* Create Java library containing your class, compile it and put resulting .jar file into Unity project
-* Create Android library containint your class; this library can be put into Unity project in source code from (by naming the folder to have .androidlib “extension”) or it can be compiled and resulting .aar be put into Unity project</p>
+<p>要用新 Activity 创建插件并将其添加到项目，必须执行以下步骤：
+1.扩展 UnityPlayerActivity 文件。这最好在从 Unity 导出项目后在 Android Studio 中完成。有几个选项：
+* 可将包含您的 activity 类的 .java 或 .kt 文件放入 Unity 项目
+* 创建包含您的类的 Java 库，进行编译并将生成的 .jar 文件放入 Unity 项目
+* 创建包含您的类的 Android 库；这个库可以源代码的形式放入 Unity 项目中（通过命名文件夹，使其具有 .androidlib “扩展”），或者可以进行编译并将生成的 .aar 放入 Unity 项目中</p>
 
-<p>To create a plug-in with your new <code>Activity</code> and add it to your Project, perform the following steps:</p>
+<p>要用新 <code>Activity</code> 创建插件并将其添加到项目，请执行以下步骤：</p>
 
-<ol>
-<li>
-<p>Extend the UnityPlayerActivity file. The best way to do this is in Android Studio after exporting your project from Unity. You then have the following options:</p>
+<p>1.扩展 UnityPlayerActivity 文件。这最好在从 Unity 导出项目后在 Android Studio 中完成。然后您有以下选项：</p>
 
-<ul>
-<li>Put the .java or .kt file that contains your activity class directly into Unity project By default, the file is located at:</li>
-</ul>
+<pre><code>* 将包含您的 activity 类的 .java 或 .kt 文件直接放入 Unity 项目。默认情况下，该文件位于：
 
-<p><strong>macOS:</strong></p>
+__macOS：__
 
-<p><code>/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/src/com/unity3d/player</code></p>
+`/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/src/com/unity3d/player`
 
-<p><strong>Windows：</strong></p>
+__Windows：__
 
-<p><code>C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\src\com\unity3d\player</code> </p>
+`C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\src\com\unity3d\player`
 
-<ul>
-<li>Create a Java library that contains your class, compile it and put the resulting .jar file into your Unity project</li>
-<li>
-<a href="https://developer.android.com/studio/projects/android-library">Create an Android library</a> that contains your class. You can then put this library into your Unity project in your source code. To do this, give your folder a name with an .androidlib extension, or it can be compile it and put the resulting .aar file in your Unity project</li>
-</ul>
-</li>
-<li><p>Create a new Android manifest to set the new <code>Activity</code> as the entry point of your application, then place the <code>AndroidManifest.xml</code> file in the <code>Assets/Plugins/Android</code> folder of your Project.</p></li>
-</ol>
+* 创建包含您的类的 Java 库，进行编译并将生成的 .jar 文件放入 Unity 项目
+* 创建一个包含您的类的 [Android 库](https://developer.android.com/studio/projects/android-library)。然后，您可以将此库放入源代码中的 Unity 项目中。为此，请为您的文件夹命名并使用 .androidlib 扩展名，或者可以对其进行编译并将生成的 .aar 文件放入您的 Unity 项目中
+</code></pre>
+
+<p>1.创建一个新的 Android 清单以将新的 <code>Activity</code> 设置为应用程序的入口点，然后将 <code>AndroidManifest.xml</code> 文件放在项目的 <code>Assets/Plugins/Android</code> 文件夹中。</p>
 
 <p><a name="#StartupArguments"></a></p>
 
-<h2>Specifying Unity startup arguments from a custom UnityPlayerActivity file</h2>
+<h2>从自定义 UnityPlayerActivity 文件指定 Unity 启动参数</h2>
 
 <p>扩展 <code>UnityPlayerActivity</code> 时，可覆盖 <code>String UnityPlayerActivity.updateUnityCommandLineArguments</code>(String cmdLine) 以将启动参数传递给 Unity。</p>
 
@@ -314,7 +312,7 @@ public class OverrideExample extends UnityPlayerActivity {
 
 <h1>UnityPlayerActivity 示例文件</h1>
 
-<p>The following is an example of a <code>UnityPlayerActivity</code> file:</p>
+<p>以下是 <code>UnityPlayerActivity</code> 文件的示例：</p>
 
 <pre><code class="lang-java">OverrideExample.java:
 package com.company.product;
@@ -337,7 +335,7 @@ public class OverrideExample extends UnityPlayerActivity {
 }
 </code></pre>
 
-<p>The corresponding <code>AndroidManifest.xml</code> might look like the following:</p>
+<p>相应的 <code>AndroidManifest.xml</code> 可能如下所示：</p>
 
 <pre><code class="lang-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.company.product"&gt;
@@ -355,19 +353,13 @@ public class OverrideExample extends UnityPlayerActivity {
 
 </code></pre>
 
-<p>To create a plug-in with your new Activity and add it to your Project, you must perform the following steps:</p>
+<p>要用新 Activity 创建插件并将其添加到项目，必须执行以下步骤：</p>
 
-<ol>
-<li>Extend the UnityPlayerActivity file. This is best done in Android Studio after exporting project from Unity. There are several options:
-
-<ul>
-<li>The .java or .kt file containing your activity class can put put into Unity project.</li>
-<li>Create Java library containing your class, compile it and put resulting .jar file into Unity project.</li>
-<li>Create Android library containint your class; this library can be put into Unity project in source code from (by naming the folder to have .androidlib “extension”) or it can be compiled and resulting .aar be put into Unity project.</li>
-</ul>
-</li>
-<li>Create a new Android Manifest to set the new Activity as the entry point of your application, then place the AndroidManifest.xml file in the Assets/Plugins/Android folder of your Project.</li>
-</ol>
+<p>1.扩展 UnityPlayerActivity 文件。这最好在从 Unity 导出项目后在 Android Studio 中完成。有几个选项：
+ * 可将包含您的 activity 类的 .java 或 .kt 文件放入 Unity 项目。
+ * 创建包含您的类的 Java 库，进行编译并将生成的 .jar 文件放入 Unity 项目。
+ * 创建包含您的类的 Android 库；这个库可以源代码的形式放入 Unity 项目中（通过命名文件夹，使其具有 .androidlib “扩展”），或者可以进行编译并将生成的 .aar 放入 Unity 项目中。
+2.创建一个新的 Android 清单以将新的 Activity 设置为应用程序的入口点，然后将 AndroidManifest.xml 文件放在项目的 Assets/Plugins/Android 文件夹中。</p>
 
 <hr>
 
@@ -386,7 +378,7 @@ public class OverrideExample extends UnityPlayerActivity {
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

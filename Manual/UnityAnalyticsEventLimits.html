@@ -13,8 +13,9 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Analytics 事件限制 - Unity 手册">
 <title>Analytics 事件限制 - Unity 手册</title>
-<meta name="description" content="为了维持高效且响应迅速的服务，Analytics 会对游戏或应用程序的特定实例可发送的标准和自定义事件 (Standard and Custom Events) 数量施加限制。这些限制包括：">
-<meta property="og:description" content="为了维持高效且响应迅速的服务，Analytics 会对游戏或应用程序的特定实例可发送的标准和自定义事件 (Standard and Custom Events) 数量施加限制。这些限制包括：">
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="description" content="Note: Gaming Services Analytics is now available as a preview package. Gaming Services Analytics is an improved offering that allows you to easily understand game performance and player behaviors so you can make strategic decisions. Check out the documentation.">
+<meta property="og:description" content="Note: Gaming Services Analytics is now available as a preview package. Gaming Services Analytics is an improved offering that allows you to easily understand game performance and player behaviors so you can make strategic decisions. Check out the documentation.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -34,7 +35,7 @@
       var page = 'UnityAnalyticsEventLimits';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UnityAnalyticsEventLimits.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UnityAnalyticsEventLimits.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityAnalyticsEventLimits.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityAnalyticsEventLimits.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UnityAnalyticsEventLimits.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UnityAnalyticsEventLimits.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityAnalyticsEventLimits.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityAnalyticsEventLimits.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UnityAnalyticsEventLimits.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UnityAnalyticsEventLimits.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UnityAnalyticsEventLimits.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UnityAnalyticsEventLimits.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UnityAnalyticsEventLimits.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UnityAnalyticsEventLimits.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityAnalyticsEventLimits.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityAnalyticsEventLimits.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UnityAnalyticsEventLimits.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UnityAnalyticsEventLimits.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UnityAnalyticsEventLimits.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityAnalyticsEventLimits.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityAnalyticsEventLimits.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UnityAnalyticsEventLimits.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UnityAnalyticsEventLimits.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityAnalyticsEventLimits.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityAnalyticsEventLimits.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UnityAnalyticsEventLimits.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UnityAnalyticsEventLimits.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UnityAnalyticsEventLimits.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UnityAnalyticsEventLimits.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UnityAnalyticsEventLimits.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UnityAnalyticsEventLimits.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityAnalyticsEventLimits.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityAnalyticsEventLimits.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UnityAnalyticsEventLimits.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UnityAnalyticsEventLimits.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UnityAnalyticsEventLimits.html">2018.1</a></li>
@@ -178,8 +183,8 @@
 <div class="breadcrumbs clear"><ul>
 <li><a href="UnityManual.html">Unity 用户手册 2020.3 (LTS)</a></li>
 <li><a href="UnityServices.html">Unity 服务</a></li>
-<li><a href="UnityAnalytics.html">Unity Analytics</a></li>
-<li><a href="UnityAnalyticsEvents.html">Analytics 事件</a></li>
+<li><a href="UnityAnalytics.html">Legacy Analytics</a></li>
+<li><a href="UnityAnalyticsEvents.html">Legacy Analytics Events</a></li>
 <li>Analytics 事件限制</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
@@ -193,6 +198,8 @@
 <h1>Analytics 事件限制</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
+
+<p><strong>Note</strong>: <a href="https://dashboard.unity3d.com/login?redirectTo=L2FuYWx5dGljcw==">Gaming Services Analytics</a> is now available as a preview package. Gaming Services Analytics is an improved offering that allows you to easily understand game performance and player behaviors so you can make strategic decisions. Check out the <a href="https://docs.unity.com/analytics/UnityAnalytics.htm">documentation</a>.</p>
 
 <p>为了维持高效且响应迅速的服务，Analytics 会对游戏或应用程序的特定实例可发送的标准和自定义事件 (Standard and Custom Events) 数量施加限制。这些限制包括：</p>
 
@@ -325,7 +332,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

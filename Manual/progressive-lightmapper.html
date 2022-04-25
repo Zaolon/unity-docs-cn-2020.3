@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="渐进光照贴图程序 - Unity 手册">
 <title>渐进光照贴图程序 - Unity 手册</title>
-<meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/ProgressiveLightmapper20191-AdvancedFiltering.png">
+<meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/progressive-lightmapper-settings.png">
 <meta name="description" content="渐进光照贴图程序 (Progressive Lightmapper) 是一种基于路径追踪的光照贴图系统，提供了能在 Editor 中逐渐刷新的烘焙光照贴图和光照探针。要求不重叠的 UV 具有较小的面积和角度误差，以及棋盘格图表之间有足够的填充。">
 <meta property="og:description" content="渐进光照贴图程序 (Progressive Lightmapper) 是一种基于路径追踪的光照贴图系统，提供了能在 Editor 中逐渐刷新的烘焙光照贴图和光照探针。要求不重叠的 UV 具有较小的面积和角度误差，以及棋盘格图表之间有足够的填充。">
 <meta name="author" content="Unity Technologies">
@@ -35,7 +35,7 @@
       var page = 'progressive-lightmapper';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/progressive-lightmapper.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/progressive-lightmapper.html" hreflang="en">
@@ -79,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/progressive-lightmapper.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/progressive-lightmapper.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/progressive-lightmapper.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/progressive-lightmapper.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/progressive-lightmapper.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/progressive-lightmapper.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/progressive-lightmapper.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/progressive-lightmapper.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/progressive-lightmapper.html">2020.1</a></li>
@@ -88,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/progressive-lightmapper.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/progressive-lightmapper.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/progressive-lightmapper.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/progressive-lightmapper.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/progressive-lightmapper.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/progressive-lightmapper.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/progressive-lightmapper.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/progressive-lightmapper.html">2018.1</a></li>
@@ -143,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/progressive-lightmapper.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/progressive-lightmapper.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/progressive-lightmapper.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/progressive-lightmapper.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/progressive-lightmapper.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/progressive-lightmapper.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/progressive-lightmapper.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/progressive-lightmapper.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/progressive-lightmapper.html">2020.1</a></li>
@@ -152,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/progressive-lightmapper.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/progressive-lightmapper.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/progressive-lightmapper.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/progressive-lightmapper.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/progressive-lightmapper.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/progressive-lightmapper.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/progressive-lightmapper.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/progressive-lightmapper.html">2018.1</a></li>
@@ -229,6 +233,10 @@
 
 <h2>设置</h2>
 
+<figure>
+<img src="../uploads/Main/progressive-lightmapper-settings.png" alt="">
+</figure>
+
 <table>
 <colgroup>
 <col style="text-align:left;">
@@ -246,7 +254,7 @@
 <tbody>
 <tr>
 	<td style="text-align:left;" colspan="2"><strong>Lightmapper</strong></td>
-	<td style="text-align:left;">使用此设置来指定用于计算场景中的光照贴图的内部光照计算软件。选项为：<br><br><a href="progressive-lightmapper.html">Progressive CPU</a><br><a href="GPUProgressiveLightmapper.html">Progressive GPU</a><br><a href="GI-Enlighten.html">Enlighten（已弃用）</a><br><br>默认值为 <strong>Progressive CPU</strong>。</td>
+	<td style="text-align:left;">Use this to specify which internal lighting calculation software to use to calculate lightmaps in the Scene. The options are:<br><br><a href="progressive-lightmapper.html">Progressive CPU</a><br><a href="GPUProgressiveLightmapper.html">Progressive GPU</a><br><a href="GI-Enlighten.html">Enlighten</a><br><br>The default value is <strong>Progressive CPU</strong>.</td>
 </tr>
 <tr>
 	<td style="text-align:left;" colspan="2"><strong>Prioritize View</strong></td>
@@ -471,7 +479,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

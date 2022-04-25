@@ -13,8 +13,9 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="WebGL：服务器配置代码示例 - Unity 手册">
 <title>WebGL：服务器配置代码示例 - Unity 手册</title>
-<meta name="description" content="下面的代码示例说明如何在使用 WebGL 时配置服务器。以下示例适用于 IIS 和 Apache 服务器。有关 WebGL 服务器配置的更多信息，请参阅 WebGL：压缩构建和服务器配置。">
-<meta property="og:description" content="下面的代码示例说明如何在使用 WebGL 时配置服务器。以下示例适用于 IIS 和 Apache 服务器。有关 WebGL 服务器配置的更多信息，请参阅 WebGL：压缩构建和服务器配置。">
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="description" content="The code samples below show how to configure your server when working with WebGL. The following samples apply to Nginx, Apache, and IIS servers. For further information on WebGL server configuration, see WebGL: Compressed builds and server configuration.">
+<meta property="og:description" content="The code samples below show how to configure your server when working with WebGL. The following samples apply to Nginx, Apache, and IIS servers. For further information on WebGL server configuration, see WebGL: Compressed builds and server configuration.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -34,7 +35,7 @@
       var page = 'webgl-server-configuration-code-samples';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/webgl-server-configuration-code-samples.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/webgl-server-configuration-code-samples.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/webgl-server-configuration-code-samples.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/webgl-server-configuration-code-samples.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/webgl-server-configuration-code-samples.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/webgl-server-configuration-code-samples.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/webgl-server-configuration-code-samples.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/webgl-server-configuration-code-samples.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/webgl-server-configuration-code-samples.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/webgl-server-configuration-code-samples.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/webgl-server-configuration-code-samples.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/webgl-server-configuration-code-samples.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/webgl-server-configuration-code-samples.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/webgl-server-configuration-code-samples.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/webgl-server-configuration-code-samples.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/webgl-server-configuration-code-samples.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/webgl-server-configuration-code-samples.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/webgl-server-configuration-code-samples.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/webgl-server-configuration-code-samples.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/webgl-server-configuration-code-samples.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/webgl-server-configuration-code-samples.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/webgl-server-configuration-code-samples.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/webgl-server-configuration-code-samples.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/webgl-server-configuration-code-samples.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/webgl-server-configuration-code-samples.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/webgl-server-configuration-code-samples.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/webgl-server-configuration-code-samples.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/webgl-server-configuration-code-samples.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/webgl-server-configuration-code-samples.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/webgl-server-configuration-code-samples.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/webgl-server-configuration-code-samples.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/webgl-server-configuration-code-samples.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/webgl-server-configuration-code-samples.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/webgl-server-configuration-code-samples.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/webgl-server-configuration-code-samples.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/webgl-server-configuration-code-samples.html">2018.1</a></li>
@@ -179,7 +184,7 @@
 <li><a href="UnityManual.html">Unity 用户手册 2020.3 (LTS)</a></li>
 <li><a href="PlatformSpecific.html">平台开发</a></li>
 <li><a href="webgl.html">WebGL</a></li>
-<li><a href="webgl-gettingstarted.html">WebGL 开发入门</a></li>
+<li><a href="webgl-building-distribution.html">Building and distributing a WebGL project</a></li>
 <li>WebGL：服务器配置代码示例</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
@@ -187,26 +192,120 @@
 <span class="prev"><a href="webgl-deploying.html"></a></span><div class="tip">WebGL：压缩构建和服务器配置</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="webgl-browsercompatibility.html"></a></span><div class="tip">WebGL 浏览器兼容性</div>
+<span class="next"><a href="webgl-debugging.html"></a></span><div class="tip">对 WebGL 构建进行调试和故障排除</div>
 </div>
 </div></div>
 <h1>WebGL：服务器配置代码示例</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>下面的代码示例说明如何在使用 WebGL 时配置服务器。以下示例适用于 IIS 和 Apache 服务器。有关 WebGL 服务器配置的更多信息，请参阅 <a href="webgl-deploying.html">WebGL：压缩构建和服务器配置</a>。</p>
+<p>The code samples below show how to configure your server when working with WebGL. The following samples apply to Nginx, Apache, and IIS servers. For further information on WebGL server configuration, see <a href="webgl-deploying.html">WebGL: Compressed builds and server configuration</a>.</p>
+
+<h2>Server configuration for WebGL builds (Nginx)</h2>
+
+<pre><code>http {
+# ...
+
+server {
+# Add the following config within http server configuration
+# ...
+ 
+# On-disk Brotli-precompressed data files should be served with compression enabled:
+location ~ .+\.(data|symbols\.json)\.br$ {
+    # Because this file is already pre-compressed on disk, disable the on-demand compression on it.
+    # Otherwise nginx would attempt double compression.
+    gzip off;
+    add_header Content-Encoding br;
+    default_type application/octet-stream;
+}
+
+# On-disk Brotli-precompressed JavaScript code files:
+location ~ .+\.js\.br$ {
+    gzip off; # Do not attempt dynamic gzip compression on an already compressed file
+    add_header Content-Encoding br;
+    default_type application/javascript;
+}
+
+# On-disk Brotli-precompressed WebAssembly files:
+location ~ .+\.wasm\.br$ {
+    gzip off; # Do not attempt dynamic gzip compression on an already compressed file
+    add_header Content-Encoding br;
+    # Enable streaming WebAssembly compilation by specifying the correct MIME type for
+    # Wasm files.
+    default_type application/wasm;
+}
+
+# On-disk gzip-precompressed data files should be served with compression enabled:
+location ~ .+\.(data|symbols\.json)\.gz$ {
+    gzip off; # Do not attempt dynamic gzip compression on an already compressed file
+    add_header Content-Encoding gzip;
+    default_type application/octet-stream;
+}
+
+# On-disk gzip-precompressed JavaScript code files:
+location ~ .+\.js\.gz$ {
+    gzip off; # Do not attempt dynamic gzip compression on an already compressed file
+    add_header Content-Encoding gzip;
+    default_type application/javascript;
+}
+
+# On-disk gzip-precompressed WebAssembly files:
+location ~ .+\.wasm\.gz$ {
+    gzip off; # Do not attempt dynamic gzip compression on an already compressed file
+    add_header Content-Encoding gzip;
+    # Enable streaming WebAssembly compilation by specifying the correct MIME type for
+    # Wasm files.
+    default_type application/wasm;
+}
+}
+}
+</code></pre>
+
+<h2>WebGL 构建的服务器配置 (Apache)</h2>
+
+<pre><code class="lang-apacheconf"># This configuration file should be uploaded to the server as "&lt;Application Folder&gt;/Build/.htaccess"
+# NOTE: "mod_mime" Apache module must be enabled for this configuration to work.
+&lt;IfModule mod_mime.c&gt;
+
+# The following lines are required for builds without decompression fallback, compressed with gzip
+RemoveType .gz
+AddEncoding gzip .gz
+AddType application/octet-stream .data.gz
+AddType application/wasm .wasm.gz
+AddType application/javascript .js.gz
+AddType application/octet-stream .symbols.json.gz
+
+# The following lines are required for builds without decompression fallback, compressed with Brotli
+RemoveType .br
+RemoveLanguage .br
+AddEncoding br .br
+AddType application/octet-stream .data.br
+AddType application/wasm .wasm.br
+AddType application/javascript .js.br
+AddType application/octet-stream .symbols.json.br
+
+# The following line improves loading performance for uncompressed builds
+AddType application/wasm .wasm
+
+# Uncomment the following line to improve loading performance for gzip-compressed builds with decompression fallback
+# AddEncoding gzip .unityweb
+
+# Uncomment the following line to improve loading performance for brotli-compressed builds with decompression fallback
+# AddEncoding br .unityweb
+
+&lt;/IfModule&gt;
+</code></pre>
 
 <h2>无解压缩回退的压缩 WebGL 构建的服务器配置 (IIS)</h2>
 
 <pre><code class="lang-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;!--
  The following server configuration can be used for compressed WebGL builds without decompression fallback.
- This configuration file should be uploaded to the server as "&lt;Application Folder&gt;/Build/web.config"。
-此配置已在 IIS 7.5、IIS 8.5 和 IIS 10.0 上托管的 Unity 2020.1 版本中进行了测试。
-注意：要在无解压缩回退的情况下托管压缩的 WebGL 构建，
-您需要在服务器上安装 "URL Rewrite" IIS 模块。
-否则，IIS 在使用此配置文件时会抛出异常。
-该模块可在 https://www.iis.net/downloads/microsoft/url-rewrite 获取。
+ This configuration file should be uploaded to the server as "&lt;Application Folder&gt;/Build/web.config".
+
+NOTE: To host compressed WebGL builds without decompression fallback, you need to install the "URL Rewrite" IIS module on the server.
+Otherwise, IIS will throw an exception when using this configuration file.
+This module is available at https://www.iis.net/downloads/microsoft/url-rewrite.
 --&gt;
 
 
@@ -218,14 +317,14 @@
      The following line disables static server compression.
    --&gt;
    &lt;urlCompression doStaticCompression="false" /&gt;
-   &lt;!-- 要托管压缩的 Unity 构建，应为压缩的构建文件设置正确的 mimeType。--&gt;
+   &lt;!-- To host compressed Unity builds, the correct mimeType should be set for the compressed build files. --&gt;
    &lt;staticContent&gt;
      &lt;!--
-       注意：如果为相同扩展名多次指定 mimeType，IIS 将抛出异常。
-       要避免与服务器上已有的配置产生冲突的可能性，应使用 &lt;remove&gt; 元素为相应扩展名移除 mimeType，
-       在使用 &lt;mimeMap&gt; 元素添加 mimeType 元素之前。
+       NOTE: IIS will throw an exception if a mimeType is specified multiple times for the same extension.
+       To avoid possible conflicts with configurations that are already on the server, you should remove the mimeType for the corresponding extension using the &lt;remove&gt; element,
+       before adding mimeType using the &lt;mimeMap&gt; element.
      --&gt;
-     &lt;!-- 不包含解压缩回退 gzip 压缩构建需要以下代码行。--&gt;
+     &lt;!-- The following lines are required for builds compressed with gzip, which don't include decompression fallback. --&gt;
      &lt;remove fileExtension=".data.gz" /&gt;
      &lt;mimeMap fileExtension=".data.gz" mimeType="application/octet-stream" /&gt;
      &lt;remove fileExtension=".wasm.gz" /&gt;
@@ -234,7 +333,7 @@
      &lt;mimeMap fileExtension=".js.gz" mimeType="application/javascript" /&gt;
      &lt;remove fileExtension=".symbols.json.gz" /&gt;
      &lt;mimeMap fileExtension=".symbols.json.gz" mimeType="application/octet-stream" /&gt;
-     &lt;!-- 不包含解压缩回退的 Brotli 压缩构建需要以下代码行。--&gt;
+     &lt;!-- The following lines are required for builds compressed with Brotli, which don't include decompression fallback. --&gt;
      &lt;remove fileExtension=".data.br" /&gt;
      &lt;mimeMap fileExtension=".data.br" mimeType="application/octet-stream" /&gt;
      &lt;remove fileExtension=".wasm.br" /&gt;
@@ -255,10 +354,10 @@
      &lt;outboundRules&gt;
        &lt;!--
          NOTE: IIS will throw an exception if the same rule name is used multiple times.
-         To avoid possible conflicts with configurations that are already on the server, you should remove the mimeType for the corresponding extension using the &lt;remove&gt; 元素为相应扩展名移除 mimeType，
-       在使用 &lt;mimeMap&gt; 元素添加 mimeType 元素之前。
+         To avoid possible conflicts with configurations that are already on the server, you should remove the mimeType for the corresponding extension using the &lt;remove&gt; element,
+       before adding mimeType using the &lt;mimeMap&gt; element.
        --&gt;
-       &lt;!-- 不包含解压缩回退的 gzip 压缩构建需要以下代码。--&gt;
+       &lt;!-- The following section is required for builds compressed with gzip, which don't include decompression fallback. --&gt;
        &lt;remove name="Append gzip Content-Encoding header" /&gt;
        &lt;rule name="Append gzip Content-Encoding header"&gt;
          &lt;match serverVariable="RESPONSE_Content-Encoding" pattern=".*" /&gt;
@@ -267,7 +366,7 @@
          &lt;/conditions&gt;
          &lt;action type="Rewrite" value="gzip" /&gt;
        &lt;/rule&gt;
-       &lt;!-- 不包含解压缩回退的 Brotli 压缩构建需要以下代码。--&gt;
+       &lt;!-- The following section is required for builds compressed with Brotli, which don't include decompression fallback. --&gt;
        &lt;remove name="Append brotli Content-Encoding header" /&gt;
        &lt;rule name="Append brotli Content-Encoding header"&gt;
          &lt;match serverVariable="RESPONSE_Content-Encoding" pattern=".*" /&gt;
@@ -288,7 +387,6 @@
 &lt;!--
  The following server configuration can be used for uncompressed WebGL builds.
  This configuration file should be uploaded to the server as "&lt;Application Folder&gt;/Build/web.config"
- 此配置已在 IIS 7.5、IIS 8.5 和 IIS 10.0 上托管的 Unity 2020.1 版本中进行了测试。
 --&gt;
 &lt;configuration&gt;
  &lt;system.webServer&gt;
@@ -299,8 +397,8 @@
    &lt;staticContent&gt;
      &lt;!--
        NOTE: IIS will throw an exception if a mimeType is specified multiple times for the same extension.
-       To avoid possible conflicts with configurations that are already on the server, you should remove the mimeType for the corresponding extension using the &lt;remove&gt; 元素为相应扩展名移除 mimeType，
-       在使用 &lt;mimeMap&gt; 元素添加 mimeType 之前。
+       To avoid possible conflicts with configurations that are already on the server, you should remove the mimeType for the corresponding extension using the &lt;remove&gt; element,
+       before adding mimeType using the &lt;mimeMap&gt; element.
      --&gt;
      &lt;remove fileExtension=".data" /&gt;
      &lt;mimeMap fileExtension=".data" mimeType="application/octet-stream" /&gt;
@@ -313,53 +411,19 @@
 &lt;/configuration&gt;
 </code></pre>
 
-<h2>WebGL 构建的服务器配置 (Apache)</h2>
-
-<pre><code class="lang-apacheconf"># 这个配置文件应该以"&lt;Application Folder&gt;/Build/.htaccess"的形式上传到服务器
-# 此配置已在 Apache/2.4 上托管的 Unity 2020.1 版本中进行了测试
-# 注意：必须启用"mod_mime"Apache 模块，此配置才能正常运行。
-&lt;IfModule mod_mime.c&gt;
-
-# 对于无解压缩回退的 gzip 压缩构建，需要以下代码行
-RemoveType .gz
-AddEncoding gzip .gz
-AddType application/octet-stream .data.gz
-AddType application/wasm .wasm.gz
-AddType application/javascript .js.gz
-AddType application/octet-stream .symbols.json.gz
-
-# 对于无解压缩回退的 Brotli 压缩构建，需要以下代码行
-RemoveType .br
-RemoveLanguage .br
-AddEncoding br .br
-AddType application/octet-stream .data.br
-AddType application/wasm .wasm.br
-AddType application/javascript .js.br
-AddType application/octet-stream .symbols.json.br
-
-# 以下代码行可改善未压缩构建的性能
-AddType application/wasm .wasm
-
-# 取消注释下面的代码行可改善带解压缩回退的 gzip 压缩构建的加载性能
-# AddEncoding gzip .unityweb
-
-# 取消注释下面的代码行可改善带解压缩回退的 brotli 压缩构建的加载性能
-# AddEncoding br .unityweb
-</code></pre>
-
 <hr>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="webgl-deploying.html"></a></span><div class="tip">WebGL：压缩构建和服务器配置</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="webgl-browsercompatibility.html"></a></span><div class="tip">WebGL 浏览器兼容性</div>
+<span class="next"><a href="webgl-debugging.html"></a></span><div class="tip">对 WebGL 构建进行调试和故障排除</div>
 </div>
 </div>
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

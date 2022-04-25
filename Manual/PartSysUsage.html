@@ -14,8 +14,8 @@
 <meta property="og:title" content="使用内置粒子系统 - Unity 手册">
 <title>使用内置粒子系统 - Unity 手册</title>
 <meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/PartSysEffectPanel.png">
-<meta name="description" content="内置粒子系统使用一个组件，因此将粒子系统放置在场景中涉及到添加预制的游戏对象（菜单：__GameObject__ &gt; Effects &gt; Particle System__）或将组件添加到现有游戏对象（菜单：__Component &gt; Effects &gt; Particle System__）。由于组件非常复杂，因此 Inspector 分为多个可折叠子部分或__模块__，每个子部分或模块都包含一组相关属性。此外，可使用单独的 Editor 窗口（通过 Inspector 中的 Open Window__ 按钮访问）同时编辑一个或多个系统。请参阅有关粒子系统组件和各个粒子系统模块的文档，了解更多信息。">
-<meta property="og:description" content="内置粒子系统使用一个组件，因此将粒子系统放置在场景中涉及到添加预制的游戏对象（菜单：__GameObject__ &gt; Effects &gt; Particle System__）或将组件添加到现有游戏对象（菜单：__Component &gt; Effects &gt; Particle System__）。由于组件非常复杂，因此 Inspector 分为多个可折叠子部分或__模块__，每个子部分或模块都包含一组相关属性。此外，可使用单独的 Editor 窗口（通过 Inspector 中的 Open Window__ 按钮访问）同时编辑一个或多个系统。请参阅有关粒子系统组件和各个粒子系统模块的文档，了解更多信息。">
+<meta name="description" content="The Built-in Particle System uses a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: GameObject &gt; Effects &gt; Particle System) or adding the component to an existing GameObject (menu: Component &gt; Effects &gt; Particle System). Because the component is quite complicated, the Inspector is divided into a number of collapsible sub-sections or modules that each contain a group of related properties. Additionally, you can edit one or more systems at the same time using a separate Editor window accessed via the Open Editor button in the Inspector. See documentation on the Particle System component and individual Particle System modules to learn more.">
+<meta property="og:description" content="The Built-in Particle System uses a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: GameObject &gt; Effects &gt; Particle System) or adding the component to an existing GameObject (menu: Component &gt; Effects &gt; Particle System). Because the component is quite complicated, the Inspector is divided into a number of collapsible sub-sections or modules that each contain a group of related properties. Additionally, you can edit one or more systems at the same time using a separate Editor window accessed via the Open Editor button in the Inspector. See documentation on the Particle System component and individual Particle System modules to learn more.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -35,7 +35,7 @@
       var page = 'PartSysUsage';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/PartSysUsage.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/PartSysUsage.html" hreflang="en">
@@ -79,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/PartSysUsage.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/PartSysUsage.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/PartSysUsage.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/PartSysUsage.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/PartSysUsage.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/PartSysUsage.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/PartSysUsage.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/PartSysUsage.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/PartSysUsage.html">2020.1</a></li>
@@ -88,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/PartSysUsage.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/PartSysUsage.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/PartSysUsage.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/PartSysUsage.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/PartSysUsage.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/PartSysUsage.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/PartSysUsage.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/PartSysUsage.html">2018.1</a></li>
@@ -143,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/PartSysUsage.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/PartSysUsage.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/PartSysUsage.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/PartSysUsage.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/PartSysUsage.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/PartSysUsage.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/PartSysUsage.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/PartSysUsage.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/PartSysUsage.html">2020.1</a></li>
@@ -152,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/PartSysUsage.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/PartSysUsage.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/PartSysUsage.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/PartSysUsage.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/PartSysUsage.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/PartSysUsage.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/PartSysUsage.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/PartSysUsage.html">2018.1</a></li>
@@ -179,6 +183,7 @@
 <div class="breadcrumbs clear"><ul>
 <li><a href="UnityManual.html">Unity 用户手册 2020.3 (LTS)</a></li>
 <li><a href="Graphics.html">图形</a></li>
+<li><a href="visual-effects.html">Visual effects</a></li>
 <li><a href="ParticleSystems.html">粒子系统</a></li>
 <li><a href="Built-inParticleSystem.html">内置粒子系统</a></li>
 <li>使用内置粒子系统</li>
@@ -195,7 +200,7 @@
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>内置粒子系统使用一个组件，因此将粒子系统放置在场景中涉及到添加预制的游戏对象（菜单：__GameObject__ &gt; <strong>Effects</strong> &gt; <strong>Particle System__）或将组件添加到现有游戏对象（菜单：__Component</strong> &gt; <strong>Effects</strong> &gt; <strong>Particle System__）。由于组件非常复杂，因此 Inspector 分为多个可折叠子部分或__模块__，每个子部分或模块都包含一组相关属性。此外，可使用单独的 Editor 窗口（通过 Inspector 中的 </strong>Open Window__ 按钮访问）同时编辑一个或多个系统。请参阅有关<a href="class-ParticleSystem.html">粒子系统组件</a>和各个<a href="ParticleSystemModules.html">粒子系统模块</a>的文档，了解更多信息。</p>
+<p>The Built-in Particle System uses a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: <strong>GameObject</strong> &gt; <strong>Effects</strong> &gt; <strong>Particle System</strong>) or adding the component to an existing GameObject (menu: <strong>Component</strong> &gt; <strong>Effects</strong> &gt; <strong>Particle System</strong>). Because the component is quite complicated, the Inspector is divided into a number of collapsible sub-sections or <strong>modules</strong> that each contain a group of related properties. Additionally, you can edit one or more systems at the same time using a separate Editor window accessed via the <strong>Open Editor</strong> button in the Inspector. See documentation on the <a href="class-ParticleSystem.html">Particle System component</a> and individual <a href="ParticleSystemModules.html">Particle System modules</a> to learn more.</p>
 
 <p>选择带有粒子系统的游戏对象时，Scene 视图包含一个小的 <strong>Particle Effect</strong> 面板，其中有一些简单控件，用于显示对系统设置的更改。</p>
 
@@ -323,7 +328,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

@@ -38,7 +38,7 @@
       var page = 'Handles-DrawDottedLines';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
     <script type="text/javascript" src="../StaticFiles/js/jquery.js">
     </script>
     <script type="text/javascript" src="../StaticFiles/js/core.js">
@@ -126,9 +126,15 @@
             <div class="version-list" style="display:none;">
               <ul class="versions">
                 <li class="supported">
-                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Handles-DrawDottedLines.html">2021.2</a>
+                  <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/Handles-DrawDottedLines.html">2022.1</a>
                 </li>
                 <li class="supported">
+                  <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/Handles-DrawDottedLines.html">2021.3</a>
+                </li>
+                <li class="">
+                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Handles-DrawDottedLines.html">2021.2</a>
+                </li>
+                <li class="">
                   <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/Handles-DrawDottedLines.html">2021.1</a>
                 </li>
                 <li class="supported">
@@ -152,7 +158,7 @@
                 <li class="">
                   <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/Handles-DrawDottedLines.html">2019.1</a>
                 </li>
-                <li class="supported">
+                <li class="">
                   <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/Handles-DrawDottedLines.html">2018.4</a>
                 </li>
                 <li class="">
@@ -261,9 +267,15 @@
                   <div class="version-list" style="display:none;">
                     <ul class="versions">
                       <li class="supported">
-                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Handles-DrawDottedLines.html">2021.2</a>
+                        <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/Handles-DrawDottedLines.html">2022.1</a>
                       </li>
                       <li class="supported">
+                        <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/Handles-DrawDottedLines.html">2021.3</a>
+                      </li>
+                      <li class="">
+                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Handles-DrawDottedLines.html">2021.2</a>
+                      </li>
+                      <li class="">
                         <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/Handles-DrawDottedLines.html">2021.1</a>
                       </li>
                       <li class="supported">
@@ -287,7 +299,7 @@
                       <li class="">
                         <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/Handles-DrawDottedLines.html">2019.1</a>
                       </li>
-                      <li class="supported">
+                      <li class="">
                         <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/Handles-DrawDottedLines.html">2018.4</a>
                       </li>
                       <li class="">
@@ -408,28 +420,28 @@ class ConnectDottedLineHandle : <a href="Editor.html">Editor</a>
             connectedObjects.objs.Length == 0)
             return;
         // we store the start and end points of the line segments in this array
-        Vector3[] lineSegments = new Vector3[connectedObjects.objs.Length * 2];<br /><br />        int lastObject = connectedObjects.objs.Length - 1;
-        Vector3 prevPoint;
+        <a href="Vector3.html">Vector3</a>[] lineSegments = new <a href="Vector3.html">Vector3</a>[connectedObjects.objs.Length * 2];<br /><br />        int lastObject = connectedObjects.objs.Length - 1;
+        <a href="Vector3.html">Vector3</a> prevPoint;
         if (connectedObjects.objs[lastObject])
         {
             prevPoint = connectedObjects.objs[lastObject].transform.position;
         }
         else
         {
-            prevPoint = Vector3.zero;
+            prevPoint = <a href="Vector3-zero.html">Vector3.zero</a>;
         }
         int pointIndex = 0;
         for (int currObjectIndex = 0; currObjectIndex &lt; connectedObjects.objs.Length; currObjectIndex++)
         {
             // find the position of our connected object and store it
-            Vector3 currPoint;
+            <a href="Vector3.html">Vector3</a> currPoint;
             if (connectedObjects.objs[currObjectIndex])
             {
                 currPoint = connectedObjects.objs[currObjectIndex].transform.position;
             }
             else
             {
-                currPoint = Vector3.zero;
+                currPoint = <a href="Vector3-zero.html">Vector3.zero</a>;
             }<br /><br />            // store the starting point of the line segment
             lineSegments[pointIndex] = prevPoint;
             pointIndex++;<br /><br />            // store the ending point of the line segment
@@ -449,7 +461,7 @@ class ConnectDottedLineHandle : <a href="Editor.html">Editor</a>
               <div class="subsection">
         <pre class="codeExampleCS">
 using UnityEngine;
-using System.Collections;<br /><br />public class ConnectedLineObjects : MonoBehaviour
+using System.Collections;<br /><br />public class ConnectedLineObjects : <a href="MonoBehaviour.html">MonoBehaviour</a>
 {
     public <a href="GameObject.html">GameObject</a>[] objs = null;
 }
@@ -504,7 +516,7 @@ class ConnectDottedLinesHandle : <a href="Editor.html">Editor</a>
         if (connectedObjects.objs == null ||
             connectedObjects.objs.Length == 0)
             return;<br /><br />        // we store the points of the line segments in this array
-        Vector3[] points = new Vector3[connectedObjects.objs.Length];<br /><br />        // for each line segment we need two indices into the points array:
+        <a href="Vector3.html">Vector3</a>[] points = new <a href="Vector3.html">Vector3</a>[connectedObjects.objs.Length];<br /><br />        // for each line segment we need two indices into the points array:
         // the index to the start and the end point
         int[] segmentIndices = new int[connectedObjects.objs.Length * 2];<br /><br />        // create the points and line segments indices
         int prevIndex = connectedObjects.objs.Length - 1;
@@ -519,7 +531,7 @@ class ConnectDottedLinesHandle : <a href="Editor.html">Editor</a>
             }
             else
             {
-                points[pointIndex] = Vector3.zero;
+                points[pointIndex] = <a href="Vector3-zero.html">Vector3.zero</a>;
             }<br /><br />            // the index to the start of the line segment
             segmentIndices[segmentIndex] = prevIndex;
             segmentIndex++;<br /><br />            // the index to the end of the line segment
@@ -540,7 +552,7 @@ class ConnectDottedLinesHandle : <a href="Editor.html">Editor</a>
               <div class="subsection">
         <pre class="codeExampleCS">
 using UnityEngine;
-using System.Collections;<br /><br />public class ConnectedLinesObjects : MonoBehaviour
+using System.Collections;<br /><br />public class ConnectedLinesObjects : <a href="MonoBehaviour.html">MonoBehaviour</a>
 {
     public <a href="GameObject.html">GameObject</a>[] objs = null;
 }
@@ -549,7 +561,7 @@ using System.Collections;<br /><br />public class ConnectedLinesObjects : MonoBe
             </div>
             <div class="footer-wrapper">
               <div class="footer clear">
-                <div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+                <div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
                 <div class="menu">
                   <a href="https://learn.unity.com/">教程</a>
                   <a href="https://answers.unity3d.com">社区答案</a>

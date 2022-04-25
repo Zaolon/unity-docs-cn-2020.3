@@ -38,7 +38,7 @@
       var page = 'Graphics-DrawMesh';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
     <script type="text/javascript" src="../StaticFiles/js/jquery.js">
     </script>
     <script type="text/javascript" src="../StaticFiles/js/core.js">
@@ -126,9 +126,15 @@
             <div class="version-list" style="display:none;">
               <ul class="versions">
                 <li class="supported">
-                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Graphics-DrawMesh.html">2021.2</a>
+                  <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/Graphics-DrawMesh.html">2022.1</a>
                 </li>
                 <li class="supported">
+                  <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/Graphics-DrawMesh.html">2021.3</a>
+                </li>
+                <li class="">
+                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Graphics-DrawMesh.html">2021.2</a>
+                </li>
+                <li class="">
                   <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/Graphics-DrawMesh.html">2021.1</a>
                 </li>
                 <li class="supported">
@@ -152,7 +158,7 @@
                 <li class="">
                   <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/Graphics-DrawMesh.html">2019.1</a>
                 </li>
-                <li class="supported">
+                <li class="">
                   <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/Graphics-DrawMesh.html">2018.4</a>
                 </li>
                 <li class="">
@@ -261,9 +267,15 @@
                   <div class="version-list" style="display:none;">
                     <ul class="versions">
                       <li class="supported">
-                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Graphics-DrawMesh.html">2021.2</a>
+                        <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/Graphics-DrawMesh.html">2022.1</a>
                       </li>
                       <li class="supported">
+                        <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/Graphics-DrawMesh.html">2021.3</a>
+                      </li>
+                      <li class="">
+                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Graphics-DrawMesh.html">2021.2</a>
+                      </li>
+                      <li class="">
                         <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/Graphics-DrawMesh.html">2021.1</a>
                       </li>
                       <li class="supported">
@@ -287,7 +299,7 @@
                       <li class="">
                         <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/Graphics-DrawMesh.html">2019.1</a>
                       </li>
-                      <li class="supported">
+                      <li class="">
                         <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/Graphics-DrawMesh.html">2018.4</a>
                       </li>
                       <li class="">
@@ -527,19 +539,19 @@
 并受到光照和投影器的影响 - 它就像是某些游戏对象的一部分。可以为所有摄像机或
 只为某些特定摄像机绘制网格。<br /><br />如果您需要绘制大量网格但又不希望出现创建和管理游戏对象的开销，
 则可以使用 DrawMesh。注意，DrawMesh 不立即绘制网格；它只“提交”网格以进行渲染。网格
-将作为正常渲染过程的一部分进行渲染。若要立即绘制网格，请使用 <a href="Graphics.DrawMeshNow.html">Graphics.DrawMeshNow</a>。<br /><br />DrawMesh 不立即绘制网格，因此如果您在该函数调用之间修改材质属性，
-网格不会收到这些更改。若要绘制一系列具有相同材质但属性略有不同（例如，更改每个网格的颜色）的网格，
-请使用 <a href="MaterialPropertyBlock.html">MaterialPropertyBlock</a> 参数。<br /><br />注意，在网格排队等待渲染时，该调用将创建一些内部资源。该分配立即执行，并将保留到帧结束（如果对象排队等待所有摄像机），或直到指定摄像机渲染自身。<br /><br />另请参阅：<a href="MaterialPropertyBlock.html">MaterialPropertyBlock</a>。
+将作为正常渲染过程的一部分进行渲染。若要立即绘制网格，请使用 <a href="Graphics.DrawMeshNow.html">Graphics.DrawMeshNow</a>。<br /><br />Because DrawMesh does not draw mesh immediately, modifying material properties between calls to this function won't make
+the meshes pick them up. If you want to draw series of meshes with the same material, but slightly different
+properties (e.g. change color of each mesh), use <a href="MaterialPropertyBlock.html">MaterialPropertyBlock</a> parameter.<br /><br />注意，在网格排队等待渲染时，该调用将创建一些内部资源。该分配立即执行，并将保留到帧结束（如果对象排队等待所有摄像机），或直到指定摄像机渲染自身。<br /><br />另请参阅：<a href="MaterialPropertyBlock.html">MaterialPropertyBlock</a>。
       </p>
               </div>
               <div class="subsection">
         <pre class="codeExampleCS">using UnityEngine;
-using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour {
+using System.Collections;<br /><br />public class ExampleClass : <a href="MonoBehaviour.html">MonoBehaviour</a> {
     public <a href="Mesh.html">Mesh</a> mesh;
     public <a href="Material.html">Material</a> material;
     public void <a href="PlayerLoop.Update.html">Update</a>() {
-        // will make the mesh appear in the <a href="SearchService.Scene.html">Scene</a> at origin position
-        <a href="Graphics.DrawMesh.html">Graphics.DrawMesh</a>(mesh, Vector3.zero, Quaternion.identity, material, 0);
+        // will make the mesh appear in the <a href="SceneManagement.Scene.html">Scene</a> at origin position
+        <a href="Graphics.DrawMesh.html">Graphics.DrawMesh</a>(mesh, <a href="Vector3-zero.html">Vector3.zero</a>, <a href="Quaternion-identity.html">Quaternion.identity</a>, material, 0);
     }
 }
 </pre>
@@ -547,7 +559,7 @@ using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour {
             </div>
             <div class="footer-wrapper">
               <div class="footer clear">
-                <div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+                <div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
                 <div class="menu">
                   <a href="https://learn.unity.com/">教程</a>
                   <a href="https://answers.unity3d.com">社区答案</a>

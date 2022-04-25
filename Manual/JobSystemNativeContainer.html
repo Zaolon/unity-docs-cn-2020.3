@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="NativeContainer - Unity 手册">
 <title>NativeContainer - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="安全系统复制数据的过程的缺点是会将作业的结果隔离到每个副本中。为了克服此限制，需要将结果存储在一种名为 NativeContainer 的共享内存中。">
 <meta property="og:description" content="安全系统复制数据的过程的缺点是会将作业的结果隔离到每个副本中。为了克服此限制，需要将结果存储在一种名为 NativeContainer 的共享内存中。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'JobSystemNativeContainer';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/JobSystemNativeContainer.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/JobSystemNativeContainer.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/JobSystemNativeContainer.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/JobSystemNativeContainer.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/JobSystemNativeContainer.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/JobSystemNativeContainer.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/JobSystemNativeContainer.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/JobSystemNativeContainer.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/JobSystemNativeContainer.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/JobSystemNativeContainer.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/JobSystemNativeContainer.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/JobSystemNativeContainer.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/JobSystemNativeContainer.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/JobSystemNativeContainer.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/JobSystemNativeContainer.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/JobSystemNativeContainer.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/JobSystemNativeContainer.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/JobSystemNativeContainer.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/JobSystemNativeContainer.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/JobSystemNativeContainer.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/JobSystemNativeContainer.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/JobSystemNativeContainer.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/JobSystemNativeContainer.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/JobSystemNativeContainer.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/JobSystemNativeContainer.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/JobSystemNativeContainer.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/JobSystemNativeContainer.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/JobSystemNativeContainer.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/JobSystemNativeContainer.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/JobSystemNativeContainer.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/JobSystemNativeContainer.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/JobSystemNativeContainer.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/JobSystemNativeContainer.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/JobSystemNativeContainer.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/JobSystemNativeContainer.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/JobSystemNativeContainer.html">2018.1</a></li>
@@ -195,15 +200,13 @@
 
 <p><a href="JobSystemSafetySystem.html">安全系统</a>复制数据的过程的缺点是会将作业的结果隔离到每个副本中。为了克服此限制，需要将结果存储在一种名为 <a href="../ScriptReference/Unity.Collections.LowLevel.Unsafe.NativeContainerAttribute.html">NativeContainer</a> 的共享内存中。</p>
 
-<h2>NativeContainer 是什么？</h2>
+<p>A <code>NativeContainer</code> is a managed value type that provides a safe C# wrapper for native memory. It contains a pointer to an unmanaged allocation. When used with the Unity C# Job System, a <code>NativeContainer</code> allows a job to access data shared with the main thread rather than working with a copy. </p>
 
-<p><code>NativeContainer</code> 是一种托管值类型，为本机内存提供了一个相对安全的 C# 封装器。它包含一个指向非托管分配的指针。与 Unity C# 作业系统一起使用时，<code>NativeContainer</code> 允许作业访问与主线程共享的数据，而不是使用副本。</p>
-
-<h2>有哪些可用的 NativeContainer 类型？</h2>
+<h2>Types of NativeContainer</h2>
 
 <p>Unity 附带了一个名为 <a href="../ScriptReference/Unity.Collections.NativeArray_1.html">NativeArray</a> 的 <code>NativeContainer</code>。您也可以使用 <a href="../ScriptReference/Unity.Collections.NativeSlice_1.html">NativeSlice</a> 操作 <code>NativeArray</code>，从特定位置获取特定长度的 <code>NativeArray</code> 子集。</p>
 
-<p><strong>注意</strong>：<a href="https://github.com/Unity-Technologies/EntityComponentSystemSamples">实体组件系统</a> (ECS) 包可以扩展 <code>Unity.Collections</code> 命名空间以包含其他类型的 <code>NativeContainer</code>：</p>
+<p><strong>Note</strong>: The <a href="https://docs.unity3d.com/Packages/com.unity.entities@latest">Entity Component System</a> (ECS) package extends the <code>Unity.Collections</code> namespace to include other types of <code>NativeContainer</code>:</p>
 
 <ul>
 <li>
@@ -220,19 +223,19 @@
 
 <p>安全系统内置于所有 <code>NativeContainer</code> 类型中。此系统会跟踪在 <code>NativeContainer</code> 中读写的内容。</p>
 
-<p><strong>注意</strong>：对 <code>NativeContainer</code> 类型进行的所有安全检查（例如越界检查、取消分配检查和竞争条件检查）仅在 Unity <strong>Editor</strong> 和 <strong>Play Mode</strong> 中可用。</p>
+<p><strong>Note</strong>: All safety checks on <code>NativeContainer</code> types (such as out of bounds checks, deallocation checks, and race condition checks) are only available in the Unity <strong>Editor</strong> and <strong>Play mode</strong>. </p>
 
-<p>该安全系统包含 <a href="../ScriptReference/Unity.Collections.LowLevel.Unsafe.DisposeSentinel.html">DisposeSentinel</a> 和 <a href="../ScriptReference/Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle.html">AtomicSafetyHandle</a>。<code>DisposeSentinel</code> 可检测内存泄漏，如果未正确释放内存，则会报错。内存泄漏发生很长时间后才会触发内存泄漏错误。</p>
+<p>Part of this safety system is the <a href="../ScriptReference/Unity.Collections.LowLevel.Unsafe.DisposeSentinel.html">DisposeSentinel</a> and <a href="../ScriptReference/Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle.html">AtomicSafetyHandle</a>. The <code>DisposeSentinel</code> detects memory leaks and gives you an error if you haven’t freed your memory correctly. Triggering the memory leak error happens long after the leak occurred.</p>
 
 <p>使用 <code>AtomicSafetyHandle</code> 可以在代码中转移 <code>NativeContainer</code> 的所有权。例如，如果两个调度的作业正在写入相同的 <code>NativeArray</code>，则安全系统会抛出一个异常，并显示一条明确的错误消息，说明问题的原因和解决方法。调度违规的作业时，安全系统会抛出此异常。</p>
 
 <p>在这种情况下，可以调度具有依赖关系的作业。第一个作业可以写入 <code>NativeContainer</code>，一旦该作业完成执行，下一个作业就可以安全地读取和写入相同的 <code>NativeContainer</code>。从主线程访问数据时，读写限制也适用。安全系统允许多个作业并行读取相同的数据。</p>
 
-<p>默认情况下，当作业可以访问 <code>NativeContainer</code> 时，该作业便具有读写访问权限。此配置可能会降低性能。C# 作业系统不允许在一个作业正在写入 <code>NativeContainer</code> 的同时再调度另一个作业对其进行写访问。</p>
+<p>By default, when a job has access to a <code>NativeContainer</code>, it has both read and write access. This configuration can slow performance. The C# Job System doesn’t allow you to schedule a job that has write access to a <code>NativeContainer</code> at the same time as another job that’s writing to it.</p>
 
-<p>如果作业不需要写入 <code>NativeContainer</code>，请用 <code>[ReadOnly]</code> 属性标记 <code>NativeContainer</code>，如下所示：</p>
+<p>If a job doesn’t need to write to a <code>NativeContainer</code>, mark the <code>NativeContainer</code> with the <code>[ReadOnly]</code> attribute, like so:</p>
 
-<pre><code>[ReadOnly]
+<pre><code class="lang-csharp">[ReadOnly]
 public NativeArray&lt;int&gt; input;
 </code></pre>
 
@@ -242,33 +245,25 @@ public NativeArray&lt;int&gt; input;
 
 <h2>NativeContainer Allocator</h2>
 
-<p>创建 <code>NativeContainer</code> 时，必须指定所需的内存分配类型。分配类型取决于作业运行的时间长度。因此，可以定制分配以便在每种情况下获得最佳性能。</p>
+<p>When creating a <code>NativeContainer</code>, you must specify the memory allocation type that you need. The allocation type depends on the length of time the job runs. This way you can tailor the allocation to get the best performance possible in each situation. </p>
 
-<p>可以使用三种 <a href="../ScriptReference/Unity.Collections.Allocator.html">Allocator</a> 类型进行 <code>NativeContainer</code> 内存分配和释放。在实例化 <code>NativeContainer</code> 时需要指定适当的一种类型。</p>
+<p>There are three <a href="../ScriptReference/Unity.Collections.Allocator.html">Allocator</a> types for <code>NativeContainer</code> memory allocation and release. You must specify the appropriate one when instantiating a <code>NativeContainer</code>.</p>
 
 <ul>
 <li>
-<strong>Allocator.Temp</strong> 具有最快的分配速度。此类型适用于寿命为一帧或更短的分配。不应该使用 <code>Temp</code> 将 <code>NativeContainer</code> 分配传递给作业。在从方法调用（例如 <a href="../ScriptReference/MonoBehaviour.Update.html">MonoBehaviour.Update</a> 或从本机代码到托管代码的任何其他回调）返回之前，还需要调用 <code>Dispose</code> 方法。</li>
+<strong>Allocator.Temp</strong> has the fastest allocation. Use it for allocations with a lifespan of one frame or fewer. However, you can’t use <code>Temp</code> to pass <code>NativeContainer</code> allocations to jobs.</li>
 <li>
-<strong>Allocator.TempJob</strong> 的分配速度比 <code>Temp</code> 慢，但比 <code>Persistent</code> 快。此类型适用于寿命为四帧的分配，并具有线程安全性。如果没有在四帧内对其执行 <code>Dispose</code> 方法，控制台会输出一条从本机代码生成的警告。大多数小作业都使用这种 <code>NativeContainer</code> 分配类型。</li>
+<strong>Allocator.TempJob</strong> is a slower allocation than <code>Temp</code> but is faster than <code>Persistent</code>. Use it for thread-safe allocations within a lifespan of four frames. <strong>Important:</strong> You must <code>Dispose</code> of this type of allocation within four frames, or the console prints a warning, generated from the native code. Most small jobs use this <code>NativeContainer</code> allocation type.</li>
 <li>
-<strong>Allocator.Persistent</strong> 是最慢的分配，但可以在您所需的任意时间内持续存在，如果有必要，可以在整个应用程序的生命周期内存在。此分配器是直接调用 <a href="http://www.cplusplus.com/reference/cstdlib/malloc/">malloc</a> 的封装器。持续时间较长的作业可以使用这种 <code>NativeContainer</code> 分配类型。在非常注重性能的情况下不应使用 <code>Persistent</code>。</li>
+<strong>Allocator.Persistent</strong> is the slowest allocation but can last as long as you need it to, and if necessary, throughout the application’s lifetime. It is a wrapper for a direct call to <a href="http://www.cplusplus.com/reference/cstdlib/malloc/">malloc</a>. Longer jobs can use this <code>NativeContainer</code> allocation type. Don’t use <code>Persistent</code> where performance is essential.</li>
 </ul>
 
 <p>例如：</p>
 
-<pre><code>NativeArray&lt;float&gt; result = new NativeArray&lt;float&gt;(1, Allocator.TempJob);
+<pre><code class="lang-csharp">NativeArray&lt;float&gt; result = new NativeArray&lt;float&gt;(1, Allocator.TempJob);
 </code></pre>
 
-<p><strong>注意</strong>：上例中的数字 1 表示 <code>NativeArray</code> 的大小。在此例子中只有一个数组元素（因为只会在 <code>result</code> 中存储一段数据）。</p>
-
-<hr>
-
-<ul>
-<li><p><span class="page-edit">2018–06–15 页面已发布</span></p></li>
-<li><p><span class="page-history">在 <a href="https://docs.unity3d.com/2018.1/Documentation/Manual/30_search.html?q=newin20181">2018.1</a> 版中公开了 C# 作业系统 <span class="search-words">NewIn20181</span></span></p></li>
-</ul>
-<!-- area:core -->
+<p><strong>Note</strong>: The number 1 in the example above indicates the size of the <code>NativeArray</code>. In this case, it has only one array element because it only stores one piece of data in <code>result</code>.</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="JobSystemSafetySystem.html"></a></span><div class="tip">C# 作业系统中的安全系统</div>
@@ -280,7 +275,7 @@ public NativeArray&lt;int&gt; input;
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="事件参考 - Unity 手册">
 <title>事件参考 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="当用户与 UI 工具包中的元素交互并更改这些元素的状态时，UI 工具包会发送一个事件。例如，以下操作均已关联：">
 <meta property="og:description" content="当用户与 UI 工具包中的元素交互并更改这些元素的状态时，UI 工具包会发送一个事件。例如，以下操作均已关联：">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'UIE-Events-Reference';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UIE-Events-Reference.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UIE-Events-Reference.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Events-Reference.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Events-Reference.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-Events-Reference.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-Events-Reference.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Events-Reference.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Events-Reference.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-Events-Reference.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-Events-Reference.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-Events-Reference.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-Events-Reference.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-Events-Reference.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-Events-Reference.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Events-Reference.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Events-Reference.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-Events-Reference.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-Events-Reference.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-Events-Reference.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Events-Reference.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Events-Reference.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-Events-Reference.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-Events-Reference.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Events-Reference.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Events-Reference.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-Events-Reference.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-Events-Reference.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-Events-Reference.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-Events-Reference.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-Events-Reference.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-Events-Reference.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Events-Reference.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Events-Reference.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-Events-Reference.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-Events-Reference.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-Events-Reference.html">2018.1</a></li>
@@ -206,7 +211,7 @@
 
 <h2>事件系列</h2>
 
-<p>Event types fit into a hierarchy based on the <a href="../ScriptReference/UIElements.EventBase.html">EventBase</a> class. Each event family implements an interface that defines the common characteristics for all events of the same family. For example, <code>BlurEvent</code> and <code>FocusEvent</code> use the <a href="../ScriptReference/UIElements.FocusEventBase_1.html">FocusEventBase</a> class.</p>
+<p>事件类型适合基于 <a href="../ScriptReference/UIElements.EventBase.html">EventBase</a> 类的层级视图。每个事件系列都实现了一个接口；该接口定义了同一系列的所有事件的共同特征。例如，<code>BlurEvent</code> 和 <code>FocusEvent</code> 使用 <a href="../ScriptReference/UIElements.FocusEventBase_1.html">FocusEventBase</a> 类。</p>
 
 <p>选择下面列出的任何事件类型，以获取有关事件、其父类和 API 文档链接的更多信息。</p>
 
@@ -252,7 +257,7 @@
 
 <tbody>
 <tr>
-	<td style="text-align:left;"><strong>Capture events</strong></td>
+	<td style="text-align:left;"><strong>捕获事件</strong></td>
 	<td style="text-align:left;"></td>
 	<td style="text-align:left;"></td>
 	<td style="text-align:left;"></td>
@@ -292,7 +297,7 @@
 	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:left;"><strong>Change events</strong></td>
+	<td style="text-align:left;"><strong>更改事件</strong></td>
 	<td style="text-align:left;"></td>
 	<td style="text-align:left;"></td>
 	<td style="text-align:left;"></td>
@@ -308,7 +313,7 @@
 	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:left;"><strong>Command events</strong></td>
+	<td style="text-align:left;"><strong>命令事件</strong></td>
 	<td style="text-align:left;"></td>
 	<td style="text-align:left;"></td>
 	<td style="text-align:left;"></td>
@@ -581,7 +586,7 @@
 </tr>
 <tr>
 	<td style="text-align:left;">
-<a href="../ScriptReference/UIElements.ContextClickEvent.html">ContextClickEvent</a> (obsolete)</td>
+<a href="../ScriptReference/UIElements.ContextClickEvent.html">ContextClickEvent</a>（已弃用）</td>
 	<td style="text-align:left;">用户按下并松开第三个鼠标键时发送。此事件用于向后兼容 IMGUI。</td>
 	<td style="text-align:left;">是</td>
 	<td style="text-align:left;">是</td>
@@ -728,7 +733,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

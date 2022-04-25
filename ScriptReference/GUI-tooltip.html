@@ -38,7 +38,7 @@
       var page = 'GUI-tooltip';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
     <script type="text/javascript" src="../StaticFiles/js/jquery.js">
     </script>
     <script type="text/javascript" src="../StaticFiles/js/core.js">
@@ -126,9 +126,15 @@
             <div class="version-list" style="display:none;">
               <ul class="versions">
                 <li class="supported">
-                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/GUI-tooltip.html">2021.2</a>
+                  <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/GUI-tooltip.html">2022.1</a>
                 </li>
                 <li class="supported">
+                  <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/GUI-tooltip.html">2021.3</a>
+                </li>
+                <li class="">
+                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/GUI-tooltip.html">2021.2</a>
+                </li>
+                <li class="">
                   <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/GUI-tooltip.html">2021.1</a>
                 </li>
                 <li class="supported">
@@ -152,7 +158,7 @@
                 <li class="">
                   <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/GUI-tooltip.html">2019.1</a>
                 </li>
-                <li class="supported">
+                <li class="">
                   <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/GUI-tooltip.html">2018.4</a>
                 </li>
                 <li class="">
@@ -261,9 +267,15 @@
                   <div class="version-list" style="display:none;">
                     <ul class="versions">
                       <li class="supported">
-                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/GUI-tooltip.html">2021.2</a>
+                        <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/GUI-tooltip.html">2022.1</a>
                       </li>
                       <li class="supported">
+                        <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/GUI-tooltip.html">2021.3</a>
+                      </li>
+                      <li class="">
+                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/GUI-tooltip.html">2021.2</a>
+                      </li>
+                      <li class="">
                         <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/GUI-tooltip.html">2021.1</a>
                       </li>
                       <li class="supported">
@@ -287,7 +299,7 @@
                       <li class="">
                         <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/GUI-tooltip.html">2019.1</a>
                       </li>
-                      <li class="supported">
+                      <li class="">
                         <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/GUI-tooltip.html">2018.4</a>
                       </li>
                       <li class="">
@@ -382,13 +394,13 @@
               <div class="subsection">
         <pre class="codeExampleCS">
 using UnityEngine;
-using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
+using System.Collections;<br /><br />public class ExampleClass : <a href="MonoBehaviour.html">MonoBehaviour</a>
 {
     void OnGUI()
     {
         // Make a button using a custom <a href="GUIContent.html">GUIContent</a> parameter to pass in the tooltip.
-        <a href="GUI.Button.html">GUI.Button</a>(new Rect(10, 10, 100, 20), new <a href="GUIContent.html">GUIContent</a>("Click me", "This is the tooltip"));<br /><br />        // <a href="Display.html">Display</a> the tooltip from the element that has mouseover or keyboard focus
-        <a href="GUI.Label.html">GUI.Label</a>(new Rect(10, 40, 100, 40), <a href="GUI-tooltip.html">GUI.tooltip</a>);
+        <a href="GUI.Button.html">GUI.Button</a>(new <a href="Rect.html">Rect</a>(10, 10, 100, 20), new <a href="GUIContent.html">GUIContent</a>("Click me", "This is the tooltip"));<br /><br />        // <a href="Display.html">Display</a> the tooltip from the element that has mouseover or keyboard focus
+        <a href="GUI.Label.html">GUI.Label</a>(new <a href="Rect.html">Rect</a>(10, 40, 100, 40), <a href="GUI-tooltip.html">GUI.tooltip</a>);
     }
 }
 </pre>
@@ -401,18 +413,18 @@ using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
               <div class="subsection">
         <pre class="codeExampleCS">
 using UnityEngine;
-using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
+using System.Collections;<br /><br />public class ExampleClass : <a href="MonoBehaviour.html">MonoBehaviour</a>
 {
     void OnGUI()
     {
         // This box is larger than many elements following it, and it has a tooltip.
-        <a href="GUI.Box.html">GUI.Box</a>(new Rect(5, 35, 110, 75), new <a href="GUIContent.html">GUIContent</a>("<a href="UIElements.Box.html">Box</a>", "this box has a tooltip"));<br /><br />        // This button is inside the box, but has no tooltip so it does not
+        <a href="GUI.Box.html">GUI.Box</a>(new <a href="Rect.html">Rect</a>(5, 35, 110, 75), new <a href="GUIContent.html">GUIContent</a>("<a href="UIElements.Box.html">Box</a>", "this box has a tooltip"));<br /><br />        // This button is inside the box, but has no tooltip so it does not
         // override the box's tooltip.
-        <a href="GUI.Button.html">GUI.Button</a>(new Rect(10, 55, 100, 20), "No tooltip here");<br /><br />        // This button is inside the box, and HAS a tooltip so it overrides
+        <a href="GUI.Button.html">GUI.Button</a>(new <a href="Rect.html">Rect</a>(10, 55, 100, 20), "No tooltip here");<br /><br />        // This button is inside the box, and HAS a tooltip so it overrides
         // the tooltip from the box.
-        <a href="GUI.Button.html">GUI.Button</a>(new Rect(10, 80, 100, 20), new <a href="GUIContent.html">GUIContent</a>("I have a tooltip", "The button overrides the box"));<br /><br />        // finally, display the tooltip from the element that has
+        <a href="GUI.Button.html">GUI.Button</a>(new <a href="Rect.html">Rect</a>(10, 80, 100, 20), new <a href="GUIContent.html">GUIContent</a>("I have a tooltip", "The button overrides the box"));<br /><br />        // finally, display the tooltip from the element that has
         // mouseover or keyboard focus
-        <a href="GUI.Label.html">GUI.Label</a>(new Rect(10, 40, 100, 40), <a href="GUI-tooltip.html">GUI.tooltip</a>);
+        <a href="GUI.Label.html">GUI.Label</a>(new <a href="Rect.html">Rect</a>(10, 40, 100, 40), <a href="GUI-tooltip.html">GUI.tooltip</a>);
     }
 }
 </pre>
@@ -425,7 +437,7 @@ using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
               <div class="subsection">
         <pre class="codeExampleCS">
 using UnityEngine;
-using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
+using System.Collections;<br /><br />public class ExampleClass : <a href="MonoBehaviour.html">MonoBehaviour</a>
 {
     public string lastTooltip = " ";<br /><br />    void OnGUI()
     {
@@ -434,10 +446,10 @@ using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
         {
             if (lastTooltip != "")
             {
-                SendMessage(lastTooltip + "OnMouseOut", SendMessageOptions.DontRequireReceiver);
+                SendMessage(lastTooltip + "OnMouseOut", <a href="SendMessageOptions.DontRequireReceiver.html">SendMessageOptions.DontRequireReceiver</a>);
             }<br /><br />            if (<a href="GUI-tooltip.html">GUI.tooltip</a> != "")
             {
-                SendMessage(<a href="GUI-tooltip.html">GUI.tooltip</a> + "OnMouseOver", SendMessageOptions.DontRequireReceiver);
+                SendMessage(<a href="GUI-tooltip.html">GUI.tooltip</a> + "OnMouseOver", <a href="SendMessageOptions.DontRequireReceiver.html">SendMessageOptions.DontRequireReceiver</a>);
             }<br /><br />            lastTooltip = <a href="GUI-tooltip.html">GUI.tooltip</a>;
         }
     }<br /><br />    void Button1OnMouseOver()
@@ -453,7 +465,7 @@ using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
             </div>
             <div class="footer-wrapper">
               <div class="footer clear">
-                <div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+                <div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
                 <div class="menu">
                   <a href="https://learn.unity.com/">教程</a>
                   <a href="https://answers.unity3d.com">社区答案</a>

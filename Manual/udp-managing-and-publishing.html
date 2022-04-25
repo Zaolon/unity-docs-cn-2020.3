@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="在 UDP 控制台上管理和发布游戏 - Unity 手册">
 <title>在 UDP 控制台上管理和发布游戏 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="Once you’ve built your game in the Unity Editor, the UDP console needs to repack it with each store’s SDK before you can publish your game to the supported stores.
 To upload your build to the UDP Console, follow these steps.
 Note: The UDP console only accepts APKs or AABs that have a UDP implementation.">
@@ -38,7 +39,7 @@ Note: The UDP console only accepts APKs or AABs that have a UDP implementation."
       var page = 'udp-managing-and-publishing';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/udp-managing-and-publishing.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/udp-managing-and-publishing.html" hreflang="en">
@@ -82,8 +83,10 @@ Note: The UDP console only accepts APKs or AABs that have a UDP implementation."
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/udp-managing-and-publishing.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/udp-managing-and-publishing.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/udp-managing-and-publishing.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/udp-managing-and-publishing.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/udp-managing-and-publishing.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/udp-managing-and-publishing.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/udp-managing-and-publishing.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/udp-managing-and-publishing.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/udp-managing-and-publishing.html">2020.1</a></li>
@@ -91,7 +94,7 @@ Note: The UDP console only accepts APKs or AABs that have a UDP implementation."
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/udp-managing-and-publishing.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/udp-managing-and-publishing.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/udp-managing-and-publishing.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/udp-managing-and-publishing.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/udp-managing-and-publishing.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/udp-managing-and-publishing.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/udp-managing-and-publishing.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/udp-managing-and-publishing.html">2018.1</a></li>
@@ -146,8 +149,10 @@ Note: The UDP console only accepts APKs or AABs that have a UDP implementation."
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/udp-managing-and-publishing.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/udp-managing-and-publishing.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/udp-managing-and-publishing.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/udp-managing-and-publishing.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/udp-managing-and-publishing.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/udp-managing-and-publishing.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/udp-managing-and-publishing.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/udp-managing-and-publishing.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/udp-managing-and-publishing.html">2020.1</a></li>
@@ -155,7 +160,7 @@ Note: The UDP console only accepts APKs or AABs that have a UDP implementation."
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/udp-managing-and-publishing.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/udp-managing-and-publishing.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/udp-managing-and-publishing.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/udp-managing-and-publishing.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/udp-managing-and-publishing.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/udp-managing-and-publishing.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/udp-managing-and-publishing.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/udp-managing-and-publishing.html">2018.1</a></li>
@@ -432,7 +437,7 @@ https://distribute.dashboard.unity.com/developer/api/upload/12369536319506/1d1a4
 
 <p>在将重新打包的构建版本提交到商店之前，请从“状态”选项卡下载 APK 并对其进行测试，以确保你的应用内购可以在商店的商业环境中正常工作。</p>
 
-<p><strong>注意</strong>：如果你提交新版本的游戏，你在商店的高级设置中所做的更改将被覆盖。</p>
+<p><strong>Note</strong>: Changes you’ve made in the Advanced settings for a store are not overridden if you submit a new version of your game.</p>
 
 <p><a name="company"></a></p>
 
@@ -441,7 +446,7 @@ https://distribute.dashboard.unity.com/developer/api/upload/12369536319506/1d1a4
 <p>要将游戏发布到 UDP 商店，你需要创建公司信息简介。游戏在应用商店中列出的“关于开发者”(About the developer) 部分会显示此信息。此操作只需执行一次。</p>
 
 <ol>
-<li>On the UDP console, choose your organization and select the pencil icon to edit the profile.
+<li>On the UDP console, select <strong>Settings</strong> &gt; <strong>Company Info</strong>.
 1.输入并保存你的公司信息。</li>
 </ol>
 
@@ -491,7 +496,7 @@ https://distribute.dashboard.unity.com/developer/api/upload/12369536319506/1d1a4
 
 <p>1.找到<strong>我的游戏</strong>面板。
 1. Select the <strong>archived</strong> filter in the selection criteria.
-1.将鼠标光标悬停在要恢复的游戏上以显示<strong>更多</strong>菜单 (⋮)。
+1. On the game you want to restore, select the <strong>More</strong> menu (⋮).
 1.选择<strong>恢复</strong>。</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
@@ -504,7 +509,7 @@ https://distribute.dashboard.unity.com/developer/api/upload/12369536319506/1d1a4
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

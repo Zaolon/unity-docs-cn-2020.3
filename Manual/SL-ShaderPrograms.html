@@ -13,8 +13,9 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Unity 中的 HLSL - Unity 手册">
 <title>Unity 中的 HLSL - Unity 手册</title>
-<meta name="description" content="在 Unity 中，可使用 HLSL 编程语言来编写着色器程序。">
-<meta property="og:description" content="在 Unity 中，可使用 HLSL 编程语言来编写着色器程序。">
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="description" content="In Unity, you use the HLSL programming language to write shader programs.">
+<meta property="og:description" content="In Unity, you use the HLSL programming language to write shader programs.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -34,7 +35,7 @@
       var page = 'SL-ShaderPrograms';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/SL-ShaderPrograms.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/SL-ShaderPrograms.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/SL-ShaderPrograms.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/SL-ShaderPrograms.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/SL-ShaderPrograms.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/SL-ShaderPrograms.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/SL-ShaderPrograms.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/SL-ShaderPrograms.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/SL-ShaderPrograms.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/SL-ShaderPrograms.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/SL-ShaderPrograms.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/SL-ShaderPrograms.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/SL-ShaderPrograms.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/SL-ShaderPrograms.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/SL-ShaderPrograms.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/SL-ShaderPrograms.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/SL-ShaderPrograms.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/SL-ShaderPrograms.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/SL-ShaderPrograms.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/SL-ShaderPrograms.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/SL-ShaderPrograms.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/SL-ShaderPrograms.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/SL-ShaderPrograms.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/SL-ShaderPrograms.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/SL-ShaderPrograms.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/SL-ShaderPrograms.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/SL-ShaderPrograms.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/SL-ShaderPrograms.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/SL-ShaderPrograms.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/SL-ShaderPrograms.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/SL-ShaderPrograms.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/SL-ShaderPrograms.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/SL-ShaderPrograms.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/SL-ShaderPrograms.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/SL-ShaderPrograms.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/SL-ShaderPrograms.html">2018.1</a></li>
@@ -187,14 +192,14 @@
 <span class="prev"><a href="SL-BindChannels.html"></a></span><div class="tip">ShaderLab：旧版顶点数据通道映射</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="SL-PragmaDirectives.html"></a></span><div class="tip">着色器编译：pragma 指令</div>
+<span class="next"><a href="shader-preprocessor-directives.html"></a></span><div class="tip">Preprocessor directives in HLSL</div>
 </div>
 </div></div>
 <h1>Unity 中的 HLSL</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>在 Unity 中，可使用 HLSL 编程语言来编写<a href="SL-ShaderPrograms.html">着色器程序</a>。</p>
+<p>In Unity, you use the HLSL programming language to write shader programs.</p>
 
 <p>本手册的这一部分介绍有关以 Unity 特定方式使用 HLSL 的信息。有关编写 HLSL 的常规信息，请参阅 <a href="https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl">Microsoft 的 HLSL 文档</a>。</p>
 
@@ -224,26 +229,26 @@
 
 <h2>HLSL 语法</h2>
 
-<p>HLSL has two syntaxes: a legacy DirectX 9-style syntax, and a more modern DirectX 10+ style syntax. The difference is mostly in how texture sampling functions work:</p>
+<p>HLSL 语言有两种语法：旧版的 DirectX 9 样式语法以及更现代的 DirectX 10+ 样式语法。不同之处主要在于纹理采样函数的工作方式：</p>
 
 <ul>
-<li>The legacy syntax uses sampler2D, tex2D() and similar functions. This syntax works on all platforms.</li>
-<li>The DX10+ syntax uses Texture2D, SamplerState and .Sample() functions. Some forms of this syntax do not work on OpenGL platforms, because textures and samplers are not different objects in OpenGL.</li>
+<li>旧版语法使用 sampler2D、tex2D() 和类似函数。此语法适用于所有平台。</li>
+<li>DX10+ 语法使用 Texture2D、SamplerState 和 .Sample() 函数。由于纹理和采样器在 OpenGL 中不是不同对象，因此该语法的某些形式在 OpenGL 平台上无效。</li>
 </ul>
 
-<p>Unity provides shader libraries that contain preprocessor macros to help you manage these differences. For more information, see <a href="SL-BuiltinMacros.html">Built-in shader macros</a>.</p>
+<p>Unity 提供了包含预处理器宏的着色器库来帮助您管理这些差异。有关更多信息，请参阅<a href="SL-BuiltinMacros.html">内置着色器宏</a>。</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="SL-BindChannels.html"></a></span><div class="tip">ShaderLab：旧版顶点数据通道映射</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="SL-PragmaDirectives.html"></a></span><div class="tip">着色器编译：pragma 指令</div>
+<span class="next"><a href="shader-preprocessor-directives.html"></a></span><div class="tip">Preprocessor directives in HLSL</div>
 </div>
 </div>
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="自定义序列化 - Unity 手册">
 <title>自定义序列化 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="序列化是将数据结构或对象状态转换为 Unity 可存储并在以后可重构的格式的自动过程。（请参阅有关脚本序列化的文档以了解关于 Unity 序列化的更多信息。）">
 <meta property="og:description" content="序列化是将数据结构或对象状态转换为 Unity 可存储并在以后可重构的格式的自动过程。（请参阅有关脚本序列化的文档以了解关于 Unity 序列化的更多信息。）">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'script-Serialization-Custom';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/script-Serialization-Custom.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/script-Serialization-Custom.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/script-Serialization-Custom.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/script-Serialization-Custom.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/script-Serialization-Custom.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/script-Serialization-Custom.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/script-Serialization-Custom.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/script-Serialization-Custom.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/script-Serialization-Custom.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/script-Serialization-Custom.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/script-Serialization-Custom.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/script-Serialization-Custom.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/script-Serialization-Custom.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/script-Serialization-Custom.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/script-Serialization-Custom.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/script-Serialization-Custom.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/script-Serialization-Custom.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/script-Serialization-Custom.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/script-Serialization-Custom.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/script-Serialization-Custom.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/script-Serialization-Custom.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/script-Serialization-Custom.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/script-Serialization-Custom.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/script-Serialization-Custom.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/script-Serialization-Custom.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/script-Serialization-Custom.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/script-Serialization-Custom.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/script-Serialization-Custom.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/script-Serialization-Custom.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/script-Serialization-Custom.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/script-Serialization-Custom.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/script-Serialization-Custom.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/script-Serialization-Custom.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/script-Serialization-Custom.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/script-Serialization-Custom.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/script-Serialization-Custom.html">2018.1</a></li>
@@ -206,7 +211,7 @@
 
 <p><strong>示例 1</strong>：Unity 的直接序列化，导致性能问题</p>
 
-<pre><code>
+<pre><code class="lang-C#">
 using UnityEngine;
 using System.Collections.Generic;
 using System;
@@ -215,11 +220,11 @@ public class VerySlowBehaviourDoNotDoThis : MonoBehaviour {
     [Serializable]
     public class Node {
         public string interestingValue = "value";
-        //下面的字段使序列化数据变得巨大，
-        //因为它引入了"类周期"。
+        //The field below is what makes the serialization data become huge because
+        //it introduces a 'class cycle'.
         public List&lt;Node&gt; children = new List&lt;Node&gt;();
     }
-    //这将经过序列化
+    //this gets serialized
     public Node root = new Node();
     void OnGUI() {
         Display (root);
@@ -230,10 +235,12 @@ public class VerySlowBehaviourDoNotDoThis : MonoBehaviour {
         GUILayout.BeginHorizontal ();
         GUILayout.Space (20);
         GUILayout.BeginVertical ();
-        foreach (var child in node.children)
-        Display (child);
-        if (GUILayout.Button ("Add child"))
-        node.children.Add (new Node ());
+        foreach (var child in node.children) {
+            Display (child);
+        }
+        if (GUILayout.Button ("Add child")) {
+            node.children.Add (new Node ());
+        }
         GUILayout.EndVertical ();
         GUILayout.EndHorizontal ();
     }
@@ -244,37 +251,37 @@ public class VerySlowBehaviourDoNotDoThis : MonoBehaviour {
 
 <p><strong>示例 2</strong>：避免 Unity 直接序列化，并避免性能问题</p>
 
-<pre><code>
+<pre><code class="lang-C#">
 using System.Collections.Generic;
 using System;
 
 public class BehaviourWithTree : MonoBehaviour, ISerializationCallbackReceiver {
-    // 在运行时使用的 Node 类。
-    //此类位于 BehaviourWithTree 类的内部，不会被序列化。
+    // Node class that is used at runtime.
+    // This is internal to the BehaviourWithTree class and is not serialized.
     public class Node {
-        public string interestingValue ="value";
+        public string interestingValue = "value";
         public List&lt;Node&gt; children = new List&lt;Node&gt;();
     }
-    // 我们将用于序列化的 Node 类。
+    // Node class that we will use for serialization.
     [Serializable]
     public struct SerializableNode {
         public string interestingValue;
         public int childCount;
         public int indexOfFirstChild;
     }
-    //用于运行时树表示的根节点。不序列化。
+    // The root node used for runtime tree representation. Not serialized.
     Node root = new Node();
-    //这是我们提供给 Unity 进行序列化的字段。
+    // This is the field we give Unity to serialize.
     public List&lt;SerializableNode&gt; serializedNodes;
     public void OnBeforeSerialize() {
-        //Unity 即将读取 serializedNodes 字段的内容。
-        // 现在必须"及时"将正确的数据写入该字段。
+        // Unity is about to read the serializedNodes field's contents.
+        // The correct data must now be written into that field "just in time".
         if (serializedNodes == null) serializedNodes = new List&lt;SerializableNode&gt;();
         if (root == null) root = new Node ();
         serializedNodes.Clear();
         AddNodeToSerializedNodes(root);
-        // 现在 Unity 可自由地序列化这个字段，我们应该在稍后反序列化时
-        // 找回预期的数据。
+        // Now Unity is free to serialize this field, and we should get back the expected 
+        // data when it is deserialized later.
     }
     void AddNodeToSerializedNodes(Node n) {
         var serializedNode = new SerializableNode () {
@@ -284,12 +291,13 @@ public class BehaviourWithTree : MonoBehaviour, ISerializationCallbackReceiver {
         }
         ;
         serializedNodes.Add (serializedNode);
-        foreach (var child in n.children)
-        AddNodeToSerializedNodes (child);
+        foreach (var child in n.children) {
+            AddNodeToSerializedNodes (child);
+        }
     }
     public void OnAfterDeserialize() {
-        //Unity 刚刚将新数据写入 serializedNodes 字段。
-        //让我们用这些新值填充我们的实际运行时数据。
+        //Unity has just written new data into the serializedNodes field.
+        //let's populate our actual runtime data with those new values.
         if (serializedNodes.Count &gt; 0) {
             ReadNodeFromSerializedNodes (0, out root);
         } else
@@ -297,13 +305,13 @@ public class BehaviourWithTree : MonoBehaviour, ISerializationCallbackReceiver {
     }
     int ReadNodeFromSerializedNodes(int index, out Node node) {
         var serializedNode = serializedNodes [index];
-        //将反序列化的数据传输到内部 Node 类
+        // Transfer the deserialized data into the internal Node class
         Node newNode = new Node() {
             interestingValue = serializedNode.interestingValue,
             children = new List&lt;Node&gt; ()
         }
         ;
-        // 以深度优先的方式读取树，因为这正是我们写入树的方式。
+        // The tree needs to be read in depth-first, since that's how we wrote it out.
         for (int i = 0; i != serializedNode.childCount; i++) {
             Node childNode;
             index = ReadNodeFromSerializedNodes (++index, out childNode);
@@ -312,22 +320,25 @@ public class BehaviourWithTree : MonoBehaviour, ISerializationCallbackReceiver {
         node = newNode;
         return index;
     }
-    // 此 OnGUI 在 Game 视图中绘制出节点树，其中包含用于添加新节点作为子项的按钮。
+    // This OnGUI draws out the node tree in the Game View, with buttons to add new nodes as children.
     void OnGUI() {
-        if (root != null)
-        Display (root);
+        if (root != null) {
+            Display (root);
+        }
     }
     void Display(Node node) {
         GUILayout.Label ("Value: ");
-        // 允许修改节点的"有用值"。
+        // Allow modification of the node's "interesting value".
         node.interestingValue = GUILayout.TextField(node.interestingValue, GUILayout.Width(200));
         GUILayout.BeginHorizontal ();
         GUILayout.Space (20);
         GUILayout.BeginVertical ();
-        foreach (var child in node.children)
-        Display (child);
-        if (GUILayout.Button ("Add child"))
-        node.children.Add (new Node ());
+        foreach (var child in node.children) {
+            Display (child);
+        }
+        if (GUILayout.Button ("Add child")) {
+            node.children.Add (new Node ());
+        }
         GUILayout.EndVertical ();
         GUILayout.EndHorizontal ();
     }
@@ -352,7 +363,7 @@ public class BehaviourWithTree : MonoBehaviour, ISerializationCallbackReceiver {
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

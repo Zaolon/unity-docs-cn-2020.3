@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Unity 中 UI 系统的对比 - Unity 手册">
 <title>Unity 中 UI 系统的对比 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="Unity 打算让 UI 工具包成为新 UI 开发项目的推荐 UI 系统，但它仍然缺少 Unity UI (uGUI) 和 IMGUI 中的一些功能。这些较旧的系统更适合特定用例，并且需要支持旧版项目。">
 <meta property="og:description" content="Unity 打算让 UI 工具包成为新 UI 开发项目的推荐 UI 系统，但它仍然缺少 Unity UI (uGUI) 和 IMGUI 中的一些功能。这些较旧的系统更适合特定用例，并且需要支持旧版项目。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'UI-system-compare';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UI-system-compare.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UI-system-compare.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UI-system-compare.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UI-system-compare.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UI-system-compare.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UI-system-compare.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UI-system-compare.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UI-system-compare.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UI-system-compare.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UI-system-compare.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UI-system-compare.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UI-system-compare.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UI-system-compare.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UI-system-compare.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UI-system-compare.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UI-system-compare.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UI-system-compare.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UI-system-compare.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UI-system-compare.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UI-system-compare.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UI-system-compare.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UI-system-compare.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UI-system-compare.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UI-system-compare.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UI-system-compare.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UI-system-compare.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UI-system-compare.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UI-system-compare.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UI-system-compare.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UI-system-compare.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UI-system-compare.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UI-system-compare.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UI-system-compare.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UI-system-compare.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UI-system-compare.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UI-system-compare.html">2018.1</a></li>
@@ -264,7 +269,7 @@
 </tbody>
 </table>
 
-<p>* <em>Requires the <a href="UIE-UITK-package.html">UI Toolkit package</a>, currently in preview.</em></p>
+<p>* <em>需要 <a href="UIE-UITK-package.html">UI 工具包软件包</a>（当前处于预览版）。</em></p>
 
 <p>若要创建运行时 UI，可在 UI 工具包与 Unity UI (uGUI) 之间进行选择。请参阅<a href="#feature-comparison-ui-toolkit-vs-unity-ui-ugui">功能比较：UI 工具包与 Unity UI (uGUI)</a>。</p>
 
@@ -397,7 +402,7 @@
 	<td style="text-align:left;">场景集成</td>
 	<td style="text-align:left;">✔</td>
 	<td style="text-align:left;">✔</td>
-	<td style="text-align:left;">Unity UI GameObjects are visible in the Scene view and the Game view.<br><br>You can integrate runtime UI created with the <a href="UIE-UITK-package.html">UI Toolkit package</a> (currently in preview) via runtime components, and display it in the Game view.</td>
+	<td style="text-align:left;">Unity UI 游戏对象在 Scene 视图和 Game 视图中可见。<br><br>可以通过运行时组件集成使用 <a href="UIE-UITK-package.html">UI 工具包软件包</a>（当前处于预览版）创建的运行时 UI，并将它显示在游戏视图中。</td>
 </tr>
 </tbody>
 </table>
@@ -738,7 +743,8 @@
 	<td style="text-align:left;">开源/可定制</td>
 	<td style="text-align:left;">计划</td>
 	<td style="text-align:left;">✔</td>
-	<td style="text-align:left;">The <a href="UIE-UITK-package.html">UI Toolkit package</a> (currently in preview) is customizable.</td>
+	<td style="text-align:left;">
+<a href="UIE-UITK-package.html">UI 工具包软件包</a>（当前处于预览版）可定制。</td>
 </tr>
 </tbody>
 </table>
@@ -1229,7 +1235,8 @@
 	<td style="text-align:left;">开源/可定制</td>
 	<td style="text-align:left;">计划</td>
 	<td style="text-align:left;"></td>
-	<td style="text-align:left;">The <a href="UIE-UITK-package.html">UI Toolkit package</a> (currently in preview) is customizable.</td>
+	<td style="text-align:left;">
+<a href="UIE-UITK-package.html">UI 工具包软件包</a>（当前处于预览版）可定制。</td>
 </tr>
 </tbody>
 </table>
@@ -1247,7 +1254,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

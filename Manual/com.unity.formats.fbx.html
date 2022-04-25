@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="FBX Exporter - Unity 手册">
 <title>FBX Exporter - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="">
 <meta property="og:description" content="">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'com.unity.formats.fbx';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/com.unity.formats.fbx.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/com.unity.formats.fbx.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/com.unity.formats.fbx.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/com.unity.formats.fbx.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/com.unity.formats.fbx.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/com.unity.formats.fbx.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/com.unity.formats.fbx.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/com.unity.formats.fbx.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/com.unity.formats.fbx.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/com.unity.formats.fbx.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/com.unity.formats.fbx.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/com.unity.formats.fbx.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/com.unity.formats.fbx.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/com.unity.formats.fbx.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/com.unity.formats.fbx.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/com.unity.formats.fbx.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/com.unity.formats.fbx.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/com.unity.formats.fbx.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/com.unity.formats.fbx.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/com.unity.formats.fbx.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/com.unity.formats.fbx.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/com.unity.formats.fbx.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/com.unity.formats.fbx.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/com.unity.formats.fbx.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/com.unity.formats.fbx.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/com.unity.formats.fbx.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/com.unity.formats.fbx.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/com.unity.formats.fbx.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/com.unity.formats.fbx.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/com.unity.formats.fbx.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/com.unity.formats.fbx.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/com.unity.formats.fbx.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/com.unity.formats.fbx.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/com.unity.formats.fbx.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/com.unity.formats.fbx.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/com.unity.formats.fbx.html">2018.1</a></li>
@@ -199,7 +204,7 @@
 
 <h2>描述</h2>
 
-<p>The Unity FBX Exporter package makes it easy to send geometry and animation to any application that supports the FBX format and send them back to Unity with minimal effort.<br><br>In particular, this round-trip workflow enables you to export Unity Scenes to FBX files, import them into AutodeskÂ® MayaÂ®, AutodeskÂ® Maya LTâ„¢, or AutodeskÂ® 3ds MaxÂ® using an artist-friendly interface, export Unity-ready FBX geometry and animation, and safely merge your changes back into those Assets to continue your work in Unity.</p>
+<p>使用 Unity FBX Exporter 包可以轻松地将几何形状和动画发送到支持 FBX 格式的任何应用程序，还可以轻松发送回 Unity。<br><br>具体而言，这种往返工作流程可将 Unity 场景导出到 FBX 文件，使用对美术师友好的界面将其导入到 Autodesk® Maya®、Autodesk® Maya LT™ 或 Autodesk® 3ds Max®，导出可用于 Unity 的 FBX 几何形状和动画，并安全地将更改合并回这些资源以继续您在 Unity 中的工作。</p>
 
 <h2>版本信息</h2>
 
@@ -224,32 +229,32 @@
 
 <tbody>
 <tr>
-	<td style="text-align:left;"><a href="https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.1/manual/index.html" target="_blank">com.unity.formats.fbx@4.1</a></td>
+	<td style="text-align:left;"><code>com.unity.formats.fbx@4.1</code></td>
 	<td style="text-align:left;">兼容</td>
-	<td style="text-align:left;">4.1.0-pre.2, 4.1.0</td>
+	<td style="text-align:left;">4.1.0-pre.2, 4.1.0, 4.1.1, 4.1.2</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><a href="https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html" target="_blank">com.unity.formats.fbx@4.0</a></td>
+	<td style="text-align:left;"><code>com.unity.formats.fbx@4.0</code></td>
 	<td style="text-align:left;">兼容</td>
 	<td style="text-align:left;">4.0.0-pre.1、4.0.0-pre.4、4.0.1</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><a href="https://docs.unity3d.com/Packages/com.unity.formats.fbx@3.2/manual/index.html" target="_blank">com.unity.formats.fbx@3.2</a></td>
+	<td style="text-align:left;"><code>com.unity.formats.fbx@3.2</code></td>
 	<td style="text-align:left;">预览</td>
 	<td style="text-align:left;">3.2.0-preview.2、3.2.1-preview.2</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><a href="https://docs.unity3d.com/Packages/com.unity.formats.fbx@3.1/manual/index.html" target="_blank">com.unity.formats.fbx@3.1</a></td>
+	<td style="text-align:left;"><code>com.unity.formats.fbx@3.1</code></td>
 	<td style="text-align:left;">预览</td>
 	<td style="text-align:left;">3.1.0-preview.1</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><a href="https://docs.unity3d.com/Packages/com.unity.formats.fbx@3.0/manual/index.html" target="_blank">com.unity.formats.fbx@3.0</a></td>
+	<td style="text-align:left;"><code>com.unity.formats.fbx@3.0</code></td>
 	<td style="text-align:left;">预览</td>
 	<td style="text-align:left;">3.0.0-preview.2、3.0.1-preview.2</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><a href="https://docs.unity3d.com/Packages/com.unity.formats.fbx@2.0/manual/index.html" target="_blank">com.unity.formats.fbx@2.0</a></td>
+	<td style="text-align:left;"><code>com.unity.formats.fbx@2.0</code></td>
 	<td style="text-align:left;">预览</td>
 	<td style="text-align:left;">2.0.1-preview.2、2.0.1-preview.4、2.0.1-preview.5、2.0.1-preview.11、2.0.2-preview.1、2.0.3-preview.3</td>
 </tr>
@@ -270,7 +275,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

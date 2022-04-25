@@ -11,11 +11,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="twitter:card" content="summary">
-<meta property="og:title" content="使用 Unity 开发者控制面板 (Developer Dashboard) 对 Unity Cloud Build 进行 Mercurial 配置 - Unity 手册">
-<title>使用 Unity 开发者控制面板 (Developer Dashboard) 对 Unity Cloud Build 进行 Mercurial 配置 - Unity 手册</title>
+<meta property="og:title" content="Using the Unity Developer Dashboard to configure Cloud Build for Mercurial - Unity 手册">
+<title>Using the Unity Developer Dashboard to configure Cloud Build for Mercurial - Unity 手册</title>
 <meta property="og:image" content="https://docs.unity3d.com/cn/2020.3/uploads/Main/DashMecurial_1.png">
-<meta name="description" content="Unity Cloud Build 支持存储在 Mercurial 代码仓库中的项目。您可以将代码仓库托管在 Bitbucket 或私有服务器上。">
-<meta property="og:description" content="Unity Cloud Build 支持存储在 Mercurial 代码仓库中的项目。您可以将代码仓库托管在 Bitbucket 或私有服务器上。">
+<meta name="description" content="Cloud Build supports projects stored in Mercurial repositories. You can host your repository on Bitbucket or a private server.">
+<meta property="og:description" content="Cloud Build supports projects stored in Mercurial repositories. You can host your repository on Bitbucket or a private server.">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -35,7 +35,7 @@
       var page = 'UnityCloudBuildVcsMercurial';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UnityCloudBuildVcsMercurial.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UnityCloudBuildVcsMercurial.html" hreflang="en">
@@ -79,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildVcsMercurial.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildVcsMercurial.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UnityCloudBuildVcsMercurial.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UnityCloudBuildVcsMercurial.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildVcsMercurial.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildVcsMercurial.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UnityCloudBuildVcsMercurial.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UnityCloudBuildVcsMercurial.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UnityCloudBuildVcsMercurial.html">2020.1</a></li>
@@ -88,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UnityCloudBuildVcsMercurial.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UnityCloudBuildVcsMercurial.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UnityCloudBuildVcsMercurial.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildVcsMercurial.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildVcsMercurial.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UnityCloudBuildVcsMercurial.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UnityCloudBuildVcsMercurial.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UnityCloudBuildVcsMercurial.html">2018.1</a></li>
@@ -143,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildVcsMercurial.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildVcsMercurial.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UnityCloudBuildVcsMercurial.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UnityCloudBuildVcsMercurial.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UnityCloudBuildVcsMercurial.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UnityCloudBuildVcsMercurial.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UnityCloudBuildVcsMercurial.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UnityCloudBuildVcsMercurial.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UnityCloudBuildVcsMercurial.html">2020.1</a></li>
@@ -152,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UnityCloudBuildVcsMercurial.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UnityCloudBuildVcsMercurial.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UnityCloudBuildVcsMercurial.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildVcsMercurial.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UnityCloudBuildVcsMercurial.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UnityCloudBuildVcsMercurial.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UnityCloudBuildVcsMercurial.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UnityCloudBuildVcsMercurial.html">2018.1</a></li>
@@ -180,22 +184,22 @@
 <li><a href="UnityManual.html">Unity 用户手册 2020.3 (LTS)</a></li>
 <li><a href="UnityServices.html">Unity 服务</a></li>
 <li><a href="UnityCloudBuild.html">Unity Cloud Build</a></li>
-<li><a href="UnityCloudBuildVcs.html">版本控制系统</a></li>
-<li>使用 Unity 开发者控制面板 (Developer Dashboard) 对 Unity Cloud Build 进行 Mercurial 配置</li>
+<li><a href="UnityCloudBuildSettingUp.html">Setting up Cloud Build</a></li>
+<li>Using the Unity Developer Dashboard to configure Cloud Build for Mercurial</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="UnityCloudBuildVcsGit.html"></a></span><div class="tip">使用 Unity 开发者控制面板 (Developer Dashboard) 对 Unity Cloud Build 进行 Git 配置</div>
+<span class="prev"><a href="UnityCloudBuildVcsGit.html"></a></span><div class="tip">Using the Unity Developer Dashboard to configure Cloud Build for Git</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
 <span class="next"><a href="UnityCloudBuildVcsSubversion.html"></a></span><div class="tip">将 Apache Subversion (SVN) 用于 Unity Cloud Build</div>
 </div>
 </div></div>
-<h1>使用 Unity 开发者控制面板 (Developer Dashboard) 对 Unity Cloud Build 进行 Mercurial 配置</h1>
+<h1>Using the Unity Developer Dashboard to configure Cloud Build for Mercurial</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>Unity Cloud Build 支持存储在 <a href="https://www.mercurial-scm.org/">Mercurial</a> 代码仓库中的项目。您可以将代码仓库托管在 <a href="https://bitbucket.org/">Bitbucket</a> 或私有服务器上。</p>
+<p>Cloud Build supports projects stored in <a href="https://www.mercurial-scm.org/">Mercurial</a> repositories. You can host your repository on <a href="https://bitbucket.org/">Bitbucket</a> or a private server.</p>
 
 <p>要连接到代码仓库（Repository），Unity Cloud Build 需要您提供相应的访问凭据。这一要求适用于 Bitbucket 或其他地方托管的 Mercurial 代码仓库。</p>
 
@@ -230,9 +234,9 @@
 
 <h3>设置您的凭据</h3>
 
-<p>在 Mercurial 服务器上，为 Unity Cloud Build 创建用户名并分配安全密码。如果 Mercurial 主机支持只读的用户帐户，请将此帐户设置为只读。</p>
+<p>On your Mercurial server, create a username for Unity Cloud Build and assign a secure password. If your Mercurial host supports it, make this a read-only user account. </p>
 
-<p>在 <strong>Grant us access to your source control</strong> 窗口上，输入用户名和密码，然后单击 <strong>Next: Target Setup</strong>。</p>
+<p>On the <strong>Grant us access to your source control</strong> window, enter your user name and password, and click <strong>Next: Target Setup</strong>.</p>
 
 <figure>
 <img src="../uploads/Main/DashMecurial_1.png" alt="控制面板授权窗口">
@@ -241,7 +245,7 @@
 
 <h2>设置目标编译平台</h2>
 
-<p>在 Target Setup 窗口中，选择编译平台。</p>
+<p>In the <strong>Target Setup</strong> window, select a build platform. </p>
 
 <p>在开发者控制面板 (Developer Dashboard) 上的 <strong>NEW BUILD TARGET: BASIC INFO</strong> 窗口中：</p>
 
@@ -257,21 +261,21 @@
 
 <h3>Android 凭据</h3>
 
-<p>在 IOS <strong>SIGNING CREDS</strong> 窗口上，提供以下信息：</p>
+<p>On the <strong>SIGNING CREDS</strong> window supply the following information:</p>
 
 <ul>
-<li><p>__Bundle ID__，用于在设备上和 Google Play 商店中唯一标识您的应用程序。</p></li>
+<li><p>__Bundle ID__，用于在设备上和 Google Play 应用商店中唯一标识您的应用程序。</p></li>
 <li><p>输入您的 Android 密钥库凭据或选择 <strong>Auto Generated Debug Keystore</strong> 来使用开发密钥库。有关 Android 密钥库的更多信息，请参阅 <a href="https://developer.android.com/training/articles/keystore.html">Android 密钥库系统 (Android Keystore System)</a>。</p></li>
 </ul>
 
 <h3>iOS 凭据</h3>
 
-<p>在 IOS <strong>SIGNING CREDS</strong> 窗口上，提供以下信息：</p>
+<p>On the iOS <strong>SIGNING CREDS</strong> window supply the following information:</p>
 
 <ul>
 <li><p>Bundle ID，用于在设备上唯一标识您的应用程序。</p></li>
 <li><p>用于编译应用程序的 Xcode 版本。</p></li>
-<li><p>输入您的 IOS 凭据。有关 iOS 凭据的更多信息，请参阅<a href="UnityCloudBuildiOS.html">发布到 iOS</a>。</p></li>
+<li><p>输入您的 iOS 凭据。有关 iOS 凭据的更多信息，请参阅<a href="UnityCloudBuildiOS.html">发布到 iOS</a>。</p></li>
 </ul>
 
 <hr>
@@ -280,7 +284,7 @@
 <!-- area:cloud -->
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="UnityCloudBuildVcsGit.html"></a></span><div class="tip">使用 Unity 开发者控制面板 (Developer Dashboard) 对 Unity Cloud Build 进行 Git 配置</div>
+<span class="prev"><a href="UnityCloudBuildVcsGit.html"></a></span><div class="tip">Using the Unity Developer Dashboard to configure Cloud Build for Git</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
 <span class="next"><a href="UnityCloudBuildVcsSubversion.html"></a></span><div class="tip">将 Apache Subversion (SVN) 用于 Unity Cloud Build</div>
@@ -289,7 +293,7 @@
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

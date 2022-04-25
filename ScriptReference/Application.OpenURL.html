@@ -38,7 +38,7 @@
       var page = 'Application-OpenURL';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script>
     <script type="text/javascript" src="../StaticFiles/js/jquery.js">
     </script>
     <script type="text/javascript" src="../StaticFiles/js/core.js">
@@ -126,9 +126,15 @@
             <div class="version-list" style="display:none;">
               <ul class="versions">
                 <li class="supported">
-                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Application-OpenURL.html">2021.2</a>
+                  <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/Application-OpenURL.html">2022.1</a>
                 </li>
                 <li class="supported">
+                  <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/Application-OpenURL.html">2021.3</a>
+                </li>
+                <li class="">
+                  <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Application-OpenURL.html">2021.2</a>
+                </li>
+                <li class="">
                   <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/Application-OpenURL.html">2021.1</a>
                 </li>
                 <li class="supported">
@@ -152,7 +158,7 @@
                 <li class="">
                   <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/Application-OpenURL.html">2019.1</a>
                 </li>
-                <li class="supported">
+                <li class="">
                   <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/Application-OpenURL.html">2018.4</a>
                 </li>
                 <li class="">
@@ -261,9 +267,15 @@
                   <div class="version-list" style="display:none;">
                     <ul class="versions">
                       <li class="supported">
-                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Application-OpenURL.html">2021.2</a>
+                        <a class="docs_version_url_2022.1" href="/cn/2022.1/ScriptReference/Application-OpenURL.html">2022.1</a>
                       </li>
                       <li class="supported">
+                        <a class="docs_version_url_2021.3" href="/cn/2021.3/ScriptReference/Application-OpenURL.html">2021.3</a>
+                      </li>
+                      <li class="">
+                        <a class="docs_version_url_2021.2" href="/cn/2021.2/ScriptReference/Application-OpenURL.html">2021.2</a>
+                      </li>
+                      <li class="">
                         <a class="docs_version_url_2021.1" href="/cn/2021.1/ScriptReference/Application-OpenURL.html">2021.1</a>
                       </li>
                       <li class="supported">
@@ -287,7 +299,7 @@
                       <li class="">
                         <a class="docs_version_url_2019.1" href="/cn/2019.1/ScriptReference/Application-OpenURL.html">2019.1</a>
                       </li>
-                      <li class="supported">
+                      <li class="">
                         <a class="docs_version_url_2018.4" href="/cn/2018.4/ScriptReference/Application-OpenURL.html">2018.4</a>
                       </li>
                       <li class="">
@@ -382,17 +394,18 @@
               <div class="subsection">
                 <p>
         
-          <strong>注意</strong>：<em>此方法不仅可以用于打开网页，因此具有必须了解的重要安全隐患。
-</em><br /><br />最常见的是，此方法用于打开 HTTP（网页）URL。如果提供网页地址作为此方法的参数，则网页会在默认浏览器中打开。它还会将浏览器应用程序带到前台。<br /><br />除了用于网页地址的 HTTP 协议，URL 中还可以使用其他类型的协议，如文件传输 (FTP)、电子邮件 (mailto)、数据库访问 (JDBC) 以及可能特定于某些平台的许多其他协议。在某些平台上，可以在 Unity 中使用 OpenURL 执行许多不同类型的任务。<br /><br />因此，OpenURL 命令可能会<strong>异常强大</strong>。在某些平台上，能够通过平台和安全沙盒所支持的任何协议打开本地文件、运行命令或打开连接。<br /><br />OpenURL 方法使用与应用程序本身相同的权限来运行。例如，如果应用程序作为 WebGL 播放器在桌面 Web 浏览器中运行，则无法访问计算机上的本地文件，因为 WebGL 平台本身在阻止该操作的安全沙盒内运行。如果是以其他平台为目标（如独立 EXE 应用程序），则应用程序运行时的安全限制较少并且没有安全沙盒，因此此方法更加强大。<br /><br /><strong>因此，必须非常小心不要向此函数提供字符串，这可能会由第三方恶意制作或修改。
-</strong><br /><br />在独立平台上，应考虑此方法具有与 <a href="https://en.wikipedia.org/wiki/Eval">eval</a> 类型函数（在许多其他编程语言中存在）相似的安全隐患。<br /><br />如果应用程序使用 OpenURL 打开来自第三方或使用任何用户提供的数据组合在一起的 URL 字符串，则用户提供的数据应视为不受信任，可能用于在应用程序本身的相同权限下运行任意代码。
- 必须净化不受信任的数据并验证它是否为应用程序的预期输入。<br /><br />
-<strong>Android：</strong>由于 Android 7.0 中的安全更改（<a href="https://developer.android.com/about/versions/nougat/android-7.0-changes#sharing-files">更多信息</a>），Application.OpenURL 无法再用于打开本地应用程序文件，需要使用 <a href="https://developer.android.com/reference/android/support/v4/content/FileProvider">FileProvider</a>，这可用于将文件与其他应用程序共享。<br /><br /><strong>iOS：</strong>Application.OpenURL 无法用于打开本地文件。<br /><br /><em>示例：</em>
+          <strong>Note</strong>: <em>This method can be used to open more than just web pages; therefore, it has important security implications you must be aware of.
+</em><br /><br />最常见的是，此方法用于打开 HTTP（网页）URL。如果提供网页地址作为此方法的参数，则网页会在默认浏览器中打开。它还会将浏览器应用程序带到前台。<br /><br />As well as the HTTP protocol used for web page addresses, there are other types of protocols that you can use in a URL, such as file transfer (FTP), email (mailto), database access (JDBC), and others specific to certain platforms. On some platforms you can use OpenURL in Unity to do many different types of tasks.<br /><br />For this reason, the OpenURL command can be <strong>unexpectedly powerful</strong>. On some platforms it can open local files, run commands, or open connections over any protocol that the platform and security sandbox supports.<br /><br />The OpenURL method runs with the same permissions as your app itself. For example, if your app is running as a WebGL player in a desktop web browser, it will not be able to access local files on the machine, because the WebGL platform itself runs inside a security sandbox which prevents that. If you are targeting other platforms such as standalone EXE app, your app runs with fewer security restrictions and no security sandbox, so this method is more powerful.<br /><br /><strong>Important: You must be extremely careful that you do not provide a string to this function which could possibly be maliciously crafted or modified by a third party.
+</strong><br /><br />在独立平台上，应考虑此方法具有与 <a href="https://en.wikipedia.org/wiki/Eval">eval</a> 类型函数（在许多其他编程语言中存在）相似的安全隐患。<br /><br />
+If your app uses OpenURL to open URL strings which come from a third party, or which are put together using any user-supplied data, the user-supplied data should be considered untrusted and may be used to run arbitrary code under the same permissions of your app itself.
+ You must sanitise the untrusted data and validate that it is the expected input for your application.<br /><br /><strong>WebGL:</strong> From version 2019.4.25f1, 2020.3.5f1, 2021.1.2f1, and 2021.2.0a11, Application.OpenURL opens url in a new browser tab.
+In previous versions, Application.OpenURL opens url in the same browser tab, which terminates the running Unity application.<br /><br /><strong>Android:</strong> Due to security changes in Android 7.0 (<a href="https://developer.android.com/about/versions/nougat/android-7.0-changes#sharing-files">More information</a>), Application.OpenURL can no longer be used for opening local app files, you need to use <a href="https://developer.android.com/reference/android/support/v4/content/FileProvider">FileProvider</a> which allows you to share files with other applications.<br /><br /><strong>iOS：</strong>Application.OpenURL 无法用于打开本地文件。<br /><br /><em>示例：</em>
       </p>
               </div>
               <div class="subsection">
         <pre class="codeExampleCS">
 using UnityEngine;
-using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
+using System.Collections;<br /><br />public class ExampleClass : <a href="MonoBehaviour.html">MonoBehaviour</a>
 {
     void Start()
     {
@@ -404,7 +417,7 @@ using System.Collections;<br /><br />public class ExampleClass : MonoBehaviour
             </div>
             <div class="footer-wrapper">
               <div class="footer clear">
-                <div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+                <div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
                 <div class="menu">
                   <a href="https://learn.unity.com/">教程</a>
                   <a href="https://answers.unity3d.com">社区答案</a>

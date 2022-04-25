@@ -13,14 +13,15 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="ViewData 持久性 - Unity 手册">
 <title>ViewData 持久性 - Unity 手册</title>
-<meta name="description" content="The ViewData API solves the problem of having a UI-specific state, not part of
-the data, survive domain reload and Editor restarts. The idea is to have a
-persistent data store on each EditorWindow. Each VisualElement has a
-viewDataKey that must be set to enable ViewData persistence.">
-<meta property="og:description" content="The ViewData API solves the problem of having a UI-specific state, not part of
-the data, survive domain reload and Editor restarts. The idea is to have a
-persistent data store on each EditorWindow. Each VisualElement has a
-viewDataKey that must be set to enable ViewData persistence.">
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="description" content="ViewData API 可解决以下问题：具有特定于 UI 的状态、不是数据的一部分、
+在域重新加载后仍存在和 Editor 重新启动。思路是在每个
+EditorWindow 上有一个持久数据存储。每个 VisualElement 都有
+一个 viewDataKey，必须设置它才能启用 ViewData 持久性。">
+<meta property="og:description" content="ViewData API 可解决以下问题：具有特定于 UI 的状态、不是数据的一部分、
+在域重新加载后仍存在和 Editor 重新启动。思路是在每个
+EditorWindow 上有一个持久数据存储。每个 VisualElement 都有
+一个 viewDataKey，必须设置它才能启用 ViewData 持久性。">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -40,7 +41,7 @@ viewDataKey that must be set to enable ViewData persistence.">
       var page = 'UIE-ViewData';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UIE-ViewData.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UIE-ViewData.html" hreflang="en">
@@ -84,8 +85,10 @@ viewDataKey that must be set to enable ViewData persistence.">
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-ViewData.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-ViewData.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-ViewData.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-ViewData.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-ViewData.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-ViewData.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-ViewData.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-ViewData.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-ViewData.html">2020.1</a></li>
@@ -93,7 +96,7 @@ viewDataKey that must be set to enable ViewData persistence.">
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-ViewData.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-ViewData.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-ViewData.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-ViewData.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-ViewData.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-ViewData.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-ViewData.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-ViewData.html">2018.1</a></li>
@@ -148,8 +151,10 @@ viewDataKey that must be set to enable ViewData persistence.">
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-ViewData.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-ViewData.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-ViewData.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-ViewData.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-ViewData.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-ViewData.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-ViewData.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-ViewData.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-ViewData.html">2020.1</a></li>
@@ -157,7 +162,7 @@ viewDataKey that must be set to enable ViewData persistence.">
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-ViewData.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-ViewData.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-ViewData.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-ViewData.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-ViewData.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-ViewData.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-ViewData.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-ViewData.html">2018.1</a></li>
@@ -199,10 +204,10 @@ viewDataKey that must be set to enable ViewData persistence.">
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>The ViewData API solves the problem of having a UI-specific state, not part of
-the data, survive domain reload and Editor restarts. The idea is to have a
-persistent data store on each <code>EditorWindow</code>. Each <code>VisualElement</code> has a
-<code>viewDataKey</code> that must be set to enable <code>ViewData</code> persistence.</p>
+<p>ViewData API 可解决以下问题：具有特定于 UI 的状态、不是数据的一部分、
+在域重新加载后仍存在和 Editor 重新启动。思路是在每个
+<code>EditorWindow</code> 上有一个持久数据存储。每个 <code>VisualElement</code> 都有
+一个 <code>viewDataKey</code>，必须设置它才能启用 <code>ViewData</code> 持久性。</p>
 
 <h2>用法</h2>
 
@@ -210,8 +215,8 @@ persistent data store on each <code>EditorWindow</code>. Each <code>VisualElemen
 
 <p>只要元素具有有效的 <code>viewDataKey</code>，就可启用视图数据持久性。唯一的例外是一个元素位于其父级的阴影树（而不是其逻辑父级的 <code>contentContainer</code> 的物理子项）中的时候。在此情况下，父级必须为其阴影树中的子项设置自己的 <code>viewDataKey</code> 才会具有持久性。</p>
 
-<p>For example, in <code>ScrollView</code>, each scroll bar has its own <code>viewDataKey</code> that is unique within the <code>ScrollView</code> element. When the <code>ScrollView</code> has no key set,
-the scroll bars aren’t persistent. Otherwise, the scroll bars will combine their <code>viewDataKey</code> with the parent <code>viewDataKey</code> to create a unique global key.</p>
+<p>例如，在 <code>ScrollView</code> 中，每个滚动条都有自己的 <code>viewDataKey</code>，它在 <code>ScrollView</code> 元素中是唯一的。<code>ScrollView</code> 没有设置键时，
+滚动条不会具有持久性。否则，滚动条会将其 <code>viewDataKey</code> 与父级 <code>viewDataKey</code> 组合起来以创建唯一全局键。</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="UIE-IMGUI.html"></a></span><div class="tip">IMGUI 支持</div>
@@ -223,7 +228,7 @@ the scroll bars aren’t persistent. Otherwise, the scroll bars will combine the
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

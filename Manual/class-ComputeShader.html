@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="计算着色器 - Unity 手册">
 <title>计算着色器 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="计算着色器是在显卡上并位于正常渲染管线之外运行的程序。它们可用于大规模并行的 GPGPU 算法，或用于加速游戏渲染的某些部分。为了有效使用它们，通常需要深入了解 GPU 架构和并行算法；并了解 DirectCompute、OpenGL Compute、CUDA 或 OpenCL。">
 <meta property="og:description" content="计算着色器是在显卡上并位于正常渲染管线之外运行的程序。它们可用于大规模并行的 GPGPU 算法，或用于加速游戏渲染的某些部分。为了有效使用它们，通常需要深入了解 GPU 架构和并行算法；并了解 DirectCompute、OpenGL Compute、CUDA 或 OpenCL。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'class-ComputeShader';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/class-ComputeShader.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/class-ComputeShader.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/class-ComputeShader.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/class-ComputeShader.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/class-ComputeShader.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/class-ComputeShader.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/class-ComputeShader.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/class-ComputeShader.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/class-ComputeShader.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/class-ComputeShader.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/class-ComputeShader.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/class-ComputeShader.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/class-ComputeShader.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/class-ComputeShader.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/class-ComputeShader.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/class-ComputeShader.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/class-ComputeShader.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/class-ComputeShader.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/class-ComputeShader.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/class-ComputeShader.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/class-ComputeShader.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/class-ComputeShader.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/class-ComputeShader.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/class-ComputeShader.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/class-ComputeShader.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/class-ComputeShader.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/class-ComputeShader.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/class-ComputeShader.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/class-ComputeShader.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/class-ComputeShader.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/class-ComputeShader.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/class-ComputeShader.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/class-ComputeShader.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/class-ComputeShader.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/class-ComputeShader.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/class-ComputeShader.html">2018.1</a></li>
@@ -179,7 +184,7 @@
 <li><a href="UnityManual.html">Unity 用户手册 2020.3 (LTS)</a></li>
 <li><a href="Graphics.html">图形</a></li>
 <li><a href="Shaders.html">着色器</a></li>
-<li><a href="ShadersOverview.html">Shaders core concepts</a></li>
+<li><a href="ShadersOverview.html">着色器核心概念</a></li>
 <li>计算着色器</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
@@ -187,7 +192,7 @@
 <span class="prev"><a href="SL-ShaderReplacement.html"></a></span><div class="tip"> 在运行时替换着色器</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="shader-built-in.html"></a></span><div class="tip">内置着色器</div>
+<span class="next"><a href="shader-error.html"></a></span><div class="tip">Error and loading shaders</div>
 </div>
 </div></div>
 <h1>计算着色器</h1>
@@ -289,34 +294,21 @@ void FillWithRed (uint3 dtid : SV_DispatchThreadID)
 
 <h2>变体和关键字</h2>
 
-<p>您可以使用 <code>#pragma multi_compile</code> 和 <code>#pragma multi_compile_local</code> 指令来编译计算着色器的多个变体，与常规着色器的编译方式相同。这些指令影响给定文件中的所有内核。</p>
+<p>You can use keywords to produce multiple variants of compute shaders, the same as you can for graphics shaders.</p>
 
-<p>请注意，常规着色器和计算着色器共享全局关键字。启用或禁用全局关键字会影响所有常规着色器和所有计算着色器。在计算着色器中设置的全局关键字计入全局关键字限制。</p>
-
-<p>要在所有常规着色器和计算着色器上启用或禁用全局关键字，请使用 <a href="../ScriptReference/Shader.EnableKeyword.html">Shader.EnableKeyword</a>、<a href="../ScriptReference/Shader.DisableKeyword.html">Shader.DisableKeyword</a>、<a href="../ScriptReference/CommandBuffer.EnableKeyword.html">CommandBuffer.EnableKeyword</a> 和 <a href="../ScriptReference/CommandBuffer.EnableKeyword.html">CommandBuffer.DisableKeyword</a> API。</p>
-
-<p>要在计算着色器上启用或禁用本地关键字，请使用 <a href="../ScriptReference/ComputeShader.EnableKeyword.html">ComputeShader.EnableKeyword</a> 和 <a href="../ScriptReference/ComputeShader.DisableKeyword.html">ComputeShader.DisableKeyword</a> API。</p>
-
-<p>To strip compute shader variants from a build, use the <a href="../ScriptReference/Build.IPreprocessComputeShaders.OnProcessComputeShader.html">IPreprocessComputeShaders.OnProcessComputeShader</a> API.</p>
-
-<p>有关更多信息，请参阅<a href="SL-MultipleProgramVariants.html">编写多个着色器程序变体</a>和 <a href="../ScriptReference/ComputeShader.html">ComputeShader API 文档</a>。</p>
-
-<hr>
-
-<p>*<span class="page-history">[支持多个变体]添加于 <a href="https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201">2020.1</a><span class="search-words"> NewIn20201</span></span></p>
-<!-- area:graphics -->
+<p>For general information on variants, see <a href="shader-variants.html">Shader variants</a>. For information on how to implement these features in compute shaders, see <a href="SL-MultipleProgramVariants.html">Declaring and using shader keywords in HLSL</a> and the <a href="../ScriptReference/ComputeShader.html">ComputeShader API documentation</a>.</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
 <span class="prev"><a href="SL-ShaderReplacement.html"></a></span><div class="tip"> 在运行时替换着色器</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="shader-built-in.html"></a></span><div class="tip">内置着色器</div>
+<span class="next"><a href="shader-error.html"></a></span><div class="tip">Error and loading shaders</div>
 </div>
 </div>
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>

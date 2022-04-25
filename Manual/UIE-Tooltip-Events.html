@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="工具提示事件 - Unity 手册">
 <title>工具提示事件 - Unity 手册</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
 <meta name="description" content="发送提示事件可以检查指针下方的视觉元素是否能够显示工具提示。该事件只能在编辑器中使用。">
 <meta property="og:description" content="发送提示事件可以检查指针下方的视觉元素是否能够显示工具提示。该事件只能在编辑器中使用。">
 <meta name="author" content="Unity Technologies">
@@ -34,7 +35,7 @@
       var page = 'UIE-Tooltip-Events';
       if(!page) page = 'index';
       var version = '2020.3';
-      var docs_versions = [{version: '2021.2',version_string: '2021.2',supported: true},{version: '2021.1',version_string: '2021.1',supported: true},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: true},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+      var docs_versions = [{version: '2022.1',version_string: '2022.1',supported: true},{version: '2021.3',version_string: '2021.3',supported: true},{version: '2021.2',version_string: '2021.2',supported: false},{version: '2021.1',version_string: '2021.1',supported: false},{version: '2020.3',version_string: '2020.3',supported: true},{version: '2020.2',version_string: '2020.2',supported: false},{version: '2020.1',version_string: '2020.1',supported: false},{version: '2019.4',version_string: '2019.4',supported: true},{version: '2019.3',version_string: '2019.3',supported: false},{version: '2019.2',version_string: '2019.2',supported: false},{version: '2019.1',version_string: '2019.1',supported: false},{version: '2018.4',version_string: '2018.4',supported: false},{version: '2018.3',version_string: '2018.3',supported: false},{version: '2018.2',version_string: '2018.2',supported: false},{version: '2018.1',version_string: '2018.1',supported: false},{version: '2017.4',version_string: '2017.4',supported: false},{version: '2017.3',version_string: '2017.3',supported: false},{version: '2017.2',version_string: '2017.2',supported: false},{version: '2017.1',version_string: '2017.1',supported: false},{version: '5.6',version_string: '560',supported: false},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
 <link rel="canonical" href="https://docs.unity3d.com/cn/2020.3/Manual/UIE-Tooltip-Events.html">
 <link rel="alternate" href="https://docs.unity3d.com/en/2020.3/Manual/UIE-Tooltip-Events.html" hreflang="en">
@@ -78,8 +79,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Tooltip-Events.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Tooltip-Events.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-Tooltip-Events.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-Tooltip-Events.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Tooltip-Events.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Tooltip-Events.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-Tooltip-Events.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-Tooltip-Events.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-Tooltip-Events.html">2020.1</a></li>
@@ -87,7 +90,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-Tooltip-Events.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-Tooltip-Events.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-Tooltip-Events.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Tooltip-Events.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Tooltip-Events.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-Tooltip-Events.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-Tooltip-Events.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-Tooltip-Events.html">2018.1</a></li>
@@ -142,8 +145,10 @@
 </div></div>
 <div class="version-list" style="display:none;">
 <ul class="versions">
-<li class="supported"><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Tooltip-Events.html">2021.2</a></li>
-<li class="supported"><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Tooltip-Events.html">2021.1</a></li>
+<li class="supported"><a class="docs_version_url_2022.1" href="/cn/2022.1/Manual/UIE-Tooltip-Events.html">2022.1</a></li>
+<li class="supported"><a class="docs_version_url_2021.3" href="/cn/2021.3/Manual/UIE-Tooltip-Events.html">2021.3</a></li>
+<li class=""><a class="docs_version_url_2021.2" href="/cn/2021.2/Manual/UIE-Tooltip-Events.html">2021.2</a></li>
+<li class=""><a class="docs_version_url_2021.1" href="/cn/2021.1/Manual/UIE-Tooltip-Events.html">2021.1</a></li>
 <li class="supported"><a class="docs_version_url_2020.3" href="/cn/2020.3/Manual/UIE-Tooltip-Events.html">2020.3</a></li>
 <li class=""><a class="docs_version_url_2020.2" href="/cn/2020.2/Manual/UIE-Tooltip-Events.html">2020.2</a></li>
 <li class=""><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/UIE-Tooltip-Events.html">2020.1</a></li>
@@ -151,7 +156,7 @@
 <li class=""><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/UIE-Tooltip-Events.html">2019.3</a></li>
 <li class=""><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/UIE-Tooltip-Events.html">2019.2</a></li>
 <li class=""><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/UIE-Tooltip-Events.html">2019.1</a></li>
-<li class="supported"><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Tooltip-Events.html">2018.4</a></li>
+<li class=""><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/UIE-Tooltip-Events.html">2018.4</a></li>
 <li class=""><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/UIE-Tooltip-Events.html">2018.3</a></li>
 <li class=""><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/UIE-Tooltip-Events.html">2018.2</a></li>
 <li class=""><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/UIE-Tooltip-Events.html">2018.1</a></li>
@@ -269,7 +274,7 @@
 2.将以下示例之一复制到 C# 脚本。
 3.从编辑器工具栏中，选择 <strong>Window &gt; UI Toolkit &gt; SampleWindow</strong>。</p>
 
-<h3>Example 1: Registering a callback to the TooltipEvent on the parent visual element</h3>
+<h3>示例 1：在父视觉元素上注册一个 TooltipEvent 的回调。</h3>
 
 <pre><code class="lang-csharp">using UnityEditor;
 using UnityEngine;
@@ -286,26 +291,26 @@ public class SampleWindow : EditorWindow
 
    public void CreateGUI()
    {
-       VisualElement label = new Label("Hello World! This is a UI Toolkit Label.");
+       VisualElement label = new Label("Hello World!This is a UI Toolkit Label.");
        rootVisualElement.Add(label);
 
        label.tooltip = "And this is a tooltip";
 
-       // If you comment out the registration of the callback, the tooltip that displays for the label is "And this is a tooltip".
-       // If you keep the registration of the callback, the tooltip that displays for the label (and any other child of rootVisualElement)
-       // is "Tooltip set by parent!".
+       // 如果注释掉回调的注册，则为标签显示的工具提示为 "And this is a tooltip"。
+       // 如果您保留回调的注册，则为标签（以及 rootVisualElement 的任何其他子项）显示的工具提示
+       // 为 "Tooltip set by parent!"。
        rootVisualElement.RegisterCallback&lt;TooltipEvent&gt;(evt =&gt;
        {
            evt.tooltip = "Tooltip set by parent!";
            evt.rect = (evt.target as VisualElement).worldBound;
            evt.StopPropagation();
-       }, TrickleDown.TrickleDown); // Pass the TrickleDown.TrickleDown parameter to intercept the event before it reaches the label.
+       }, TrickleDown.TrickleDown); // 传递 TrickleDown.TrickleDown 参数以在事件到达标签之前拦截事件。
    }
 }
 
 </code></pre>
 
-<h3>Example 2: Declaring a custom visual element and overriding ExecuteDefaultAction</h3>
+<h3>示例 2：声明自定义视觉元素并覆盖 ExecuteDefaultAction</h3>
 
 <pre><code class="lang-csharp">using UnityEditor;
 using UnityEngine;
@@ -377,7 +382,7 @@ public class CustomLabel : Label
 </div>
 <div class="footer-wrapper">
 <div class="footer clear">
-<div class="copy">Copyright © 2021 Unity Technologies. Publication 2020.3</div>
+<div class="copy">版权所有 © 2021 Unity Technologies. Publication 2020.3</div>
 <div class="menu">
 <a href="https://learn.unity.com/">教程</a><a href="https://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="https://forum.unity3d.com">论坛</a><a href="https://unity3d.com/asset-store">Asset Store</a>
 </div>
